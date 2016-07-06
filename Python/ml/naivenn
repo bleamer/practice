@@ -23,13 +23,13 @@ def plot_decision_boundary(pred_func, X, y):
 	# Plot the contour and training examples
 	plt.contour(xx, yy, Z, cmap=plt.cm.Spectral)
 	plt.scatter(X[:,0],X[:,1], c=y, cmap=plt.cm.Spectral)
-	plt.show()
+	# plt.show()
 
 
 # Generating random set
 np.random.seed(0)
 # Use make_moons function to create random data
-X, y = sklearn.datasets.make_moons(200, noise=0.2)
+X, y = sklearn.datasets.make_moons(200, noise=0.20)
 # plt.scatter(X[:,1], X[:,1], s=40, c=y, cmap=plt.cm.Spectral)
 
 
@@ -39,7 +39,7 @@ clf.fit(X,y)
 
 # Plot the decision boundary
 plot_decision_boundary(lambda x: clf.predict(x), X, y)
-plt.title("Logistic Regression")
+# plt.title("Logistic Regression")
 
 
 # Try Neural network now
@@ -98,7 +98,7 @@ def predict(model, x):
 # nn_hdim : Number of nodes in hidden layer
 # num_passes: Number of passes through the training data for gradient descent
 # print_loss : Flag to enable printing losses based on iterations
-def build_model(nn_hdim, num_passes = 200, print_loss = False):
+def build_model(nn_hdim, num_passes = 2000, print_loss = False):
 	# Initilize the parameter to random values. 
 	np.random.seed(0)
 	W1 = np.random.randn(nn_input_dim, nn_hdim)/np.sqrt(nn_input_dim)
@@ -155,4 +155,13 @@ plot_decision_boundary(lambda x:predict(model, x), X,y)
 plt.title("NN boundary")
 
 
-# plt.show()
+plt.figure(figsize=(16,32))
+hidden_layer_dimensions = [1,2,3,4,5,20,50]
+for i, nn_hdim in enumerate(hidden_layer_dimensions):
+	plt.subplot(5, 2, i+1)
+	plt.title('Hidden Layer size %d' % nn_hdim)
+	model = build_model(nn_hdim)
+	plot_decision_boundary(lambda x:predict(model, x), X, y)
+
+
+plt.show()
