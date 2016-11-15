@@ -1,0 +1,19 @@
+[{
+    "user": {
+        "address": {
+            "address_line": "XYZ Street",
+            "city": "San Francisco",
+            "state": "CA",
+            "zipcode": "94150"
+        }
+    }
+}, {
+    "user1": {
+        "address": {
+            "address_line": "XYZ Street",
+            "city": "San Francisco",
+            "state": "CA",
+            "zipcode": "94150"
+        }
+    }
+}]
