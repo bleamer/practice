@@ -1,130 +1,168 @@
+
+''' 
+	@synopsis - Entry point for Logical Expression Evaluator
+'''
+
 import sys
 import json
-# import yaml
-from pprint import pprint
+# from pprint import pprint
 from argparse import Namespace
-import yaml
 from collections import namedtuple
 import six
 
 
-OPERATORS = {'EQ','AND','NOT','OR','GT','LT'}
+OPERATORS = {'EQ','AND','NOT','OR','GT','LT'}			# List of all supported operators
 
-FILE = "data.json"
-OPDAT_FILE = "opdat.json"
+USER_DAT_FILE = "data.json"								# Filename for User data
+OPDAT_FILE = "opdat.json"								# Filename for operation data
 
-with open(FILE, 'r') as myfile:
-    # data=json.load(myfile)
-    
+# Read the user data file and create named tuples allow Dot operation on python dictionary
+# instead of python dictionary based access
+with open(USER_DAT_FILE, 'r') as myfile:
     data=json.load(myfile, object_hook=lambda d: namedtuple('X', d.keys())(*d.values()))
 
+# Create user object for direct reference for the data read from user data json file
 user = data[0].user
-# print(user.age)
-# n = Namespace(**data)
-# # print(data.user.age,data.user.name)
-# # print(n.user)
-
-# x = json.load(data, object_hook=lambda d: namedtuple('X', d.keys())(*d.values()))
-# # print x.name, x.hometown.name, x.hometown.id
-
-# with open(FILE).read().decode('utf-8') as dataFile:    
-#     data = json.loads(dataFile.read())
-
-# # print (p.user.address)
 
 
 
+# Read the operation data from file
 with open(OPDAT_FILE) as dataFile:    
     opData = json.load(dataFile)
-    # opData = yaml.safe_load(dataFile)
-# userData = map(lambda x: x.decode('utf-8'), userData)
-# pprint(userData)
-# pprint(opData)
-# pprint(userData)
+
+
+# Equals operator
+# Currently assumes the arguments passed are only a list of 2
 def EQ(vals):
-	# print("EQ: ",str(val1),str(val2))
-	# print("EQ: ",str(vals[0]),str(vals[1]))
-	# print(execute(vals[1]))
-	# execute(vals[1])
+
+	if len(vals) is not 2:
+		print("Invalid arguments for Equals operator")
+		return False
+
+	# Recursively try to evaluate passed arguments
 	val1 = execute(vals[0])
 	val2 = execute(vals[1])
+
+	# To ensure arithemetic comparison, convert strings objects to integers
 	if isinstance(val1, six.string_types) and val1.isdigit(): val1 = int(val1)
 	if isinstance(val2, six.string_types) and val2.isdigit(): val2 = int(val2)
-	# print("EQ: ",val1, val2, val1 == val2)
 	return val1 == val2
-	# return execute(val1) == execute(val2)
+
+# Logical AND operator
+# Currently assumes the arguments passed are is list of 2 elements
 def AND(vals):
 	# print("AND: ",execute(vals[0]),execute(vals[1]))
 	# execute(vals[1])
 	# return val1 and val2
+	if len(vals) is not 2:
+		print("Invalid arguments for AND operator")
+		return False
+
+	# Recursively try to evaluate passed arguments
 	val1 = execute(vals[0])
 	val2 = execute(vals[1])
+
+	# To ensure arithemetic comparison, convert strings objects to integers
 	if isinstance(val1, six.string_types) and val1.isdigit(): val1 = int(val1)
 	if isinstance(val2, six.string_types) and val2.isdigit(): val2 = int(val2)
+
 	return val1 and val2
+
+# OR operator
+# Currently assumes the arguments passed are is list of 2 elements
 def OR (vals):
 	# return val1 or val2
+	if len(vals) is not 2:
+		print("Invalid arguments for OR operator")
+		return False
+
+	# Recursively try to evaluate passed arguments
 	val1 = execute(vals[0])
 	val2 = execute(vals[1])
+
+	# To ensure arithemetic comparison, convert strings objects to integers
 	if isinstance(val1, six.string_types) and val1.isdigit(): val1 = int(val1)
 	if isinstance(val2, six.string_types) and val2.isdigit(): val2 = int(val2)
+
 	return val1 or val2
+
+# NOT operator
+# Currently assumes the arguments passed are is list of 1 element
 def NOT (vals):
-	# return not val
+	if len(vals) is not 1:
+		print("Invalid arguments for NOT operator")
+		return False
+	# Recursively try to evaluate passed arguments
 	val1 = execute(vals[0])
+
+	# To ensure arithemetic comparison, convert strings objects to integers
 	if isinstance(val1, six.string_types) and val1.isdigit(): val1 = int(val1)
 
-	# print(execute(val1))
 	return not val1
+
+# Greater Than operator
+# Currently assumes the arguments passed are is list of 2 elements
 def GT(vals):
-	# print("GT: ",str(vals[0]),str(vals[1]))
-	# print("GT: ",execute(vals[0]),execute(vals[1]), execute(vals[0]) > execute(vals[1]))
+
+	if len(vals) is not 2:
+		print("Invalid arguments for Greater Than operator")
+		return False
+
+	# Recursively try to evaluate passed arguments
 	val1 = execute(vals[0])
 	val2 = execute(vals[1])
+
+	# To ensure arithemetic comparison, convert strings objects to integers
 	if isinstance(val1, six.string_types) and val1.isdigit(): val1 = int(val1)
 	if isinstance(val2, six.string_types) and val2.isdigit(): val2 = int(val2)
+
 	return val1 > val2
 
+# Less Than operator
+# Currently assumes the arguments passed are is list of 2 elements
 def LT(vals):
-	# print("GT: ",str(vals[0]),str(vals[1]))
-	# print("GT: ",execute(vals[0]),execute(vals[1]), execute(vals[0]) > execute(vals[1]))
+	if len(vals) is not 2:
+		print("Invalid arguments for Less Than operator")
+		return False
+
+	# Recursively try to evaluate passed arguments
 	val1 = execute(vals[0])
 	val2 = execute(vals[1])
+
+	# To ensure arithemetic comparison, convert strings objects to integers
 	if isinstance(val1, six.string_types) and val1.isdigit(): val1 = int(val1)
 	if isinstance(val2, six.string_types) and val2.isdigit(): val2 = int(val2)
+
 	return val1 < val2
 
+
+# Parser function to evaluate an expression.
+# expr - Expression to evaluate
 def execute(expr):
 	result = None
-	# print(expr)
-	# print(type(expr))
-	# meth\odToCall = getattr(sys.modules[__name__],AND)
 	operation =  expr
+
+	# If passed expression is a single element, add it to an empty list
 	if type(operation) is not list: 
 		operation = [str(expr)]
-	# print(operation)
-	# print(type(operation))
 
 	# if first element is in the list of operators
 	if any(operation[0] in s for s in OPERATORS):
-		# print operation[0]
-		# Get the operator
+		# Use reflection to invoke the related expression
 		operand = getattr(sys.modules[__name__],str(operation[0]))
-		# print(operand,operation[1:])
-	# # print (methodToCall)
-		# if the function is defined
 		if hasattr(operand, '__call__'):
-			result = operand(operation[1:])			#invoke the function with rest of arguments
-	else:										# else it must have been a value
-		# print("found value",type(operation))
-		# operand = getattr(sys.modules[__name__],expr)		
+			result = operand(operation[1:])		# invoke the function with rest of arguments
+	else:										# else it is a list of argument
 		try:
-			operand = eval(operation[0])
+			operand = eval(operation[0])		# Check if argument can be evaluated, E.g. user.age
 		except:
-			operand = operation[0]
-		# print ("operand --- "+str(operand))
+			operand = operation[0]				# If evaluation fails, then treat it as raw value
 		return operand
-	# print (result)
-	return result                              # return result of operand
-# print(
-print(execute (opData))
+	return result                               # return result of operand
+
+
+
+
+
+if __name__ == '__main__':
+	print(execute (opData))
