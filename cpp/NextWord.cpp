@@ -1,50 +1,74 @@
 //============================================================================
 // Name        : test.cpp
-// Author      : 
+// Author      : Saurabh
 // Version     :
 // Copyright   : Your copyright notice
-// Description : Hello World in C++, Ansi-style
+// Description : Program to find the next permutation of a given string
 //============================================================================
 
 #include <iostream>
 #include <algorithm>    // std::sort
 using namespace std;
 
-string NextWord(string &s){
-	string rSorted = s;
-	string retStr = string();
-	cout << "NextWord : " << s << endl;
-	sort(rSorted.begin(), rSorted.end(),greater<char>()); // Reverse sort
-	if (rSorted == s){
-		cout << "Already reverse sorted" << endl;
-		retStr = rSorted;
-//		Return empty string
+
+// Swap two characters
+void swap(char *a, char *b){
+	*a ^= *b;
+	*b ^= *a;
+	*a ^= *b;
+}
+
+// Reverse a section of string identified between leftIndex and RightIndex
+void reverseString(string &s, int lIdx, int rIdx){
+	while(lIdx < rIdx){
+		swap(&s[lIdx++], &s[rIdx--]);
 	}
-	else{
-		cout << "Not sorted" << endl ;
-		retStr = s.substr(1);
-		if (retStr == NextWord(retStr)){
-			// Passed string is same as returned string
-			// No reversal happened
-			rSorted = retStr;
-			sort(rSorted.begin(), rSorted.end()); // sort
-			cout << "rsorted == " << rSorted << endl;
-			for (int i = 0; i < rSorted.length(); i++){
-				if (s.at(0) < rSorted.at(i)){
-					char temp = rSorted[i];
-					rSorted[i] = s[0];
-					s[0] = temp;
-					sort(s.begin(), s.end()); // sort
-					cout << "dadadada -- "<< s.at(0) << ", "<< rSorted.at(i) << endl;
-					retStr = s;
-					break;
-				}
-			}
+}
+
+// Get element to be replaced's index
+int getRepIndex(string &s, int left, int right, int key){
+	int index = -1;
+	while (left <= right){
+		int mid =  left +(right-left)/2;
+		if (s[mid] <= key)	// given key greater than mid value, search left half, because we will find higher values in left, of reverse sorted string
+		{
+			right = mid-1;
+		}					// given key lesser than mid value, search right half.
+		else{
+			left = mid+1;
+			if (index = -1 || s[index] == s[mid])
+				index = mid;
 		}
 	}
+	return index;
+}
 
-	return retStr;
-//	return s;
+bool NextWord(string &s){
+
+	int len = s.length();
+	int idx = len-2;
+	// If the given string is reverse sorted, then there exists no next word
+	while (idx >= 0){
+		if (s[idx+1] > s[idx]){
+			break;
+		}
+		--idx;
+	}
+	// If index is less than zero then we have traversed the whole string and it is
+	// in reverse sorted order
+	if (idx < 0){
+		return false;
+	}
+	else	// String is not fully reverse sorted
+	{
+		// Get the index of character where the string is not reverse sorted
+		int index = getRepIndex(s, idx+1, len-1, s[idx]);
+		// Swap the first unsorted element, with the one just greater than itself
+		swap(&s[idx],&s[index]);
+		// Reverse sort the string
+		reverseString(s, idx+1, len-1);
+		return true;
+	}
 }
 
 int main() {
@@ -56,21 +80,11 @@ int main() {
 	processWord  = inWord;
 //	cout << endl << inWord << endl;
 
-	try {
-		outWord = NextWord(processWord);
-//		cout << endl << "The next word is : " << outWord;
+	if(NextWord(inWord)){
+		cout << "Nex word is: " << inWord;
 	}
-	catch (const std::exception &exc)
-	{
-	    // catch anything thrown within try block that derives from std::exception
-	    std::cout << endl << exc.what();
-    	cout << endl << "The given word is the last word in the dictionary";
-		return 0;
+	else{
+		cout << "No next word found";
 	}
-    if (outWord == inWord){
-    	cout << endl << "The given word is the last word in the dictionary";
-    }else{
-    	cout << "The next word is: " << outWord << endl;
-    }
 	return 0;
 }
