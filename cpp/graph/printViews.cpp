@@ -3,11 +3,12 @@
 // Author      : 
 // Version     :
 // Copyright   : Your copyright notice
-// Description : Hello World in C++, Ansi-style
+// Description : Various Tree views in C++, Ansi-style
 //============================================================================
 
 #include <iostream>
 #include <queue>
+#include <cstdio>
 using namespace std;
 
 struct Node {
@@ -84,23 +85,28 @@ int max(int a, int b){
 	return (a > b ? a : b);
 }
 
-void printRightViewLevel(Node *root, int level){
-	int ht = getTreeHeight(root);
-	if (!root || level > getTreeHeight(root)){
-		return;
+void printRightViewLevel(Node *root, int level, int& lastLevel){
+	if (!root){												// if we have it hit an empty node
+		return;												// nothing to do further
 	}
-	if (level == 1){
+	if (level > lastLevel){									// Check if we are level higher than last printed level
 		cout << root->data << endl;
+		lastLevel = level;									// Update this level to be used in next iteration
 	}
-	else if (level > 1){
+	// Traverse the right tree first
+	// and if something is found print it and mark the level as visited and level up.
+	printRightViewLevel(root->rChild, level+1,lastLevel);	// Recurse right trees from level 1 onwards
+	printRightViewLevel(root->lChild, level+1,lastLevel);	// Recurse left trees from level 1 onwards
+}
 
-
-	}
+void printRightView(Node * root){
+	int lastLevel = 0;		// Start from level 0
+	printRightViewLevel(root,1, lastLevel); // Print the right view of each level recursively
 }
 
 
 int main() {
-	cout << "!!! Hello World !!!" << endl; // prints !!! Hello World !!!
+	cout << "!!! Hello World  tree views !!!" << endl; // prints !!! Hello World !!!
 	Node * root = new Node(1);
 	root->lChild = new Node(2);
 	root->rChild = new Node(3);
