@@ -1,0 +1,1 @@
+["AND",["AND", ["EQ","user.address.city", "Los Angeles"],["GT","user.age","35"]],["NOT", ["LT","user.address.zipcode","94149"]]]

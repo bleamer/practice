@@ -1,0 +1,1272 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"S",
+				"SList"
+			],
+			[
+				"num",
+				"numList"
+			],
+			[
+				"Di",
+				"digitCount"
+			],
+			[
+				"count",
+				"count7"
+			],
+			[
+				"cout",
+				"count7"
+			],
+			[
+				"n",
+				"numList"
+			],
+			[
+				"cur",
+				"curDigit"
+			],
+			[
+				"digi",
+				"digitList"
+			],
+			[
+				"dig",
+				"digitList"
+			],
+			[
+				"cu",
+				"curDigit"
+			],
+			[
+				"A",
+				"A_list"
+			],
+			[
+				"op",
+				"opData"
+			],
+			[
+				"inStr",
+				"inStr2"
+			],
+			[
+				"in",
+				"inStr2"
+			],
+			[
+				"lc",
+				"lcslen"
+			],
+			[
+				"str",
+				"str2"
+			],
+			[
+				"min",
+				"min_num_images"
+			],
+			[
+				"train_",
+				"train_folders"
+			],
+			[
+				"data",
+				"dataset"
+			],
+			[
+				"test",
+				"test_filename"
+			],
+			[
+				"may",
+				"maybe_extract"
+			],
+			[
+				"train",
+				"train_filename"
+			],
+			[
+				"Ex",
+				"Excpetion"
+			],
+			[
+				"ma",
+				"maybe_download"
+			],
+			[
+				"sta",
+				"statinfo"
+			],
+			[
+				"fil",
+				"filename"
+			],
+			[
+				"trne",
+				"trending_up"
+			],
+			[
+				"trend",
+				"trending_up"
+			],
+			[
+				"tr",
+				"True"
+			],
+			[
+				"tre",
+				"trend_changed"
+			],
+			[
+				"s",
+				"sImmortal"
+			],
+			[
+				"da",
+				"daysToDeath"
+			],
+			[
+				"m",
+				"maxDays"
+			],
+			[
+				"p",
+				"pArray"
+			],
+			[
+				"pla",
+				"plantArray"
+			],
+			[
+				"pa",
+				"paray"
+			],
+			[
+				"kill",
+				"killedPlant"
+			],
+			[
+				"Kill",
+				"killedPlant"
+			],
+			[
+				"pr",
+				"preCalcSum"
+			],
+			[
+				"mod",
+				"modArray"
+			],
+			[
+				"max",
+				"maxSum"
+			],
+			[
+				"if",
+				"ifmain\tif __name__ == '__main__'"
+			],
+			[
+				"de",
+				"delta2"
+			],
+			[
+				"del",
+				"delta3"
+			],
+			[
+				"nn_",
+				"nn_input_dim"
+			],
+			[
+				"prin",
+				"print_loss"
+			],
+			[
+				"ym",
+				"y_max"
+			],
+			[
+				"y_",
+				"y_min"
+			],
+			[
+				"x",
+				"x_min"
+			],
+			[
+				"ACCount",
+				"ACCOUNT"
+			],
+			[
+				"P",
+				"PASSWORD"
+			],
+			[
+				"AC",
+				"ACCOUNT_TYPE"
+			],
+			[
+				"File",
+				"FileList"
+			],
+			[
+				"Fil",
+				"Filelist"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "Ask grammar\n::\n\nHow to stop something from matching at the beginning or at the end of the sentence\n\n\n\n\n- Unable to delete or save grammar, even when there are no dialog plan / BPN linking the grammar",
+			"settings":
+			{
+				"buffer_size": 199,
+				"line_ending": "Unix",
+				"name": "Ask grammar"
+			}
+		},
+		{
+			"file": "thrtsevSqMod1.cpp",
+			"settings":
+			{
+				"buffer_size": 2845,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "#include<cmath>"
+			}
+		},
+		{
+			"contents": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<bpmn:definitions xmlns:bpmn=\"http://www.omg.org/spec/BPMN/20100524/MODEL\" xmlns:prop=\"http://www.ipsoft.com/schema/bpmn/prop\" xmlns:bpmndi=\"http://www.omg.org/spec/BPMN/20100524/DI\" xmlns:di=\"http://www.omg.org/spec/DD/20100524/DI\" xmlns:dc=\"http://www.omg.org/spec/DD/20100524/DC\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" id=\"Definitions_1\" targetNamespace=\"http://bpmn.io/schema/bpmn\">\n  <bpmn:process id=\"get_leaver_request\" name=\"get_leaver_request\" isExecutable=\"false\">\n    <bpmn:extensionElements>\n      <prop:property name=\"language_unit\" />\n    </bpmn:extensionElements>\n    <bpmn:userTask id=\"UserTask_1bye8br\" name=\"run the workflow common_tps_email_validator_s\">\n      <bpmn:incoming>SequenceFlow_1fbknk5</bpmn:incoming>\n      <bpmn:outgoing>SequenceFlow_1udv1lf</bpmn:outgoing>\n    </bpmn:userTask>\n    <bpmn:sequenceFlow id=\"SequenceFlow_1udv1lf\" sourceRef=\"UserTask_1bye8br\" targetRef=\"ScriptTask_0578ial\" />\n    <bpmn:userTask id=\"UserTask_1nli64u\" name=\"run the workflow epic_ab_employee_email_address_validator\">\n      <bpmn:incoming>SequenceFlow_07ez51u</bpmn:incoming>\n      <bpmn:outgoing>SequenceFlow_0jllia7</bpmn:outgoing>\n    </bpmn:userTask>\n    <bpmn:sequenceFlow id=\"SequenceFlow_07ez51u\" sourceRef=\"ScriptTask_0578ial\" targetRef=\"UserTask_1nli64u\" />\n    <bpmn:scriptTask id=\"ScriptTask_0578ial\" name=\"set line manager email address\" scriptFormat=\"javascript\">\n      <bpmn:incoming>SequenceFlow_1udv1lf</bpmn:incoming>\n      <bpmn:outgoing>SequenceFlow_07ez51u</bpmn:outgoing>\n      <bpmn:script><![CDATA[var line_manager_email_id = execution.getVariable(\"email_address\");\nexecution.setVariable(\"line_manager_email_address\" , line_manager_email_id);]]></bpmn:script>\n    </bpmn:scriptTask>\n    <bpmn:sequenceFlow id=\"SequenceFlow_0jllia7\" sourceRef=\"UserTask_1nli64u\" targetRef=\"UserTask_0az5d7h\" />\n    <bpmn:userTask id=\"UserTask_0az5d7h\" name=\"run the workflow common_get_wiam_data_without_message\">\n      <bpmn:incoming>SequenceFlow_0jllia7</bpmn:incoming>\n      <bpmn:outgoing>SequenceFlow_16pir8u</bpmn:outgoing>\n    </bpmn:userTask>\n    <bpmn:sequenceFlow id=\"SequenceFlow_16pir8u\" sourceRef=\"UserTask_0az5d7h\" targetRef=\"ScriptTask_18w1n79\" />\n    <bpmn:exclusiveGateway id=\"ExclusiveGateway_1n1yjw0\" default=\"SequenceFlow_1o4w23w\">\n      <bpmn:incoming>SequenceFlow_12ees6e</bpmn:incoming>\n      <bpmn:outgoing>SequenceFlow_1o4w23w</bpmn:outgoing>\n      <bpmn:outgoing>SequenceFlow_1m5b4ha</bpmn:outgoing>\n    </bpmn:exclusiveGateway>\n    <bpmn:sequenceFlow id=\"SequenceFlow_12ees6e\" sourceRef=\"ScriptTask_18w1n79\" targetRef=\"ExclusiveGateway_1n1yjw0\" />\n    <bpmn:sequenceFlow id=\"SequenceFlow_1o4w23w\" sourceRef=\"ExclusiveGateway_1n1yjw0\" targetRef=\"UserTask_0pi73f1\" />\n    <bpmn:userTask id=\"UserTask_0pi73f1\" name=\"say &#34;Leavers request can only be processed if requested by the Line Manager to which the leaver reports .&#34;\">\n      <bpmn:incoming>SequenceFlow_1o4w23w</bpmn:incoming>\n      <bpmn:outgoing>SequenceFlow_04gesmp</bpmn:outgoing>\n    </bpmn:userTask>\n    <bpmn:sequenceFlow id=\"SequenceFlow_04gesmp\" sourceRef=\"UserTask_0pi73f1\" targetRef=\"UserTask_0pyd7y2\" />\n    <bpmn:userTask id=\"UserTask_0pyd7y2\" name=\"say run the workflow for ticket creation\">\n      <bpmn:incoming>SequenceFlow_04gesmp</bpmn:incoming>\n      <bpmn:outgoing>SequenceFlow_0thf1mi</bpmn:outgoing>\n    </bpmn:userTask>\n    <bpmn:sequenceFlow id=\"SequenceFlow_0thf1mi\" sourceRef=\"UserTask_0pyd7y2\" targetRef=\"UserTask_096i6e2\" />\n    <bpmn:userTask id=\"UserTask_096i6e2\" name=\"escalate\">\n      <bpmn:incoming>SequenceFlow_0thf1mi</bpmn:incoming>\n      <bpmn:outgoing>SequenceFlow_0qy1ks0</bpmn:outgoing>\n    </bpmn:userTask>\n    <bpmn:endEvent id=\"EndEvent_0yw7n7f\">\n      <bpmn:incoming>SequenceFlow_0qy1ks0</bpmn:incoming>\n    </bpmn:endEvent>\n    <bpmn:sequenceFlow id=\"SequenceFlow_0qy1ks0\" sourceRef=\"UserTask_096i6e2\" targetRef=\"EndEvent_0yw7n7f\" />\n    <bpmn:userTask id=\"UserTask_16p2ccz\" name=\"say run the workflow for line manager approval\">\n      <bpmn:incoming>SequenceFlow_14nxmwn</bpmn:incoming>\n      <bpmn:outgoing>SequenceFlow_1jbpyuq</bpmn:outgoing>\n    </bpmn:userTask>\n    <bpmn:sequenceFlow id=\"SequenceFlow_1jbpyuq\" sourceRef=\"UserTask_16p2ccz\" targetRef=\"UserTask_0kqf8om\" />\n    <bpmn:userTask id=\"UserTask_0kqf8om\" name=\"say &#34;You have received an email to approve this request .&#34;\">\n      <bpmn:incoming>SequenceFlow_1jbpyuq</bpmn:incoming>\n      <bpmn:outgoing>SequenceFlow_0h2woty</bpmn:outgoing>\n    </bpmn:userTask>\n    <bpmn:endEvent id=\"EndEvent_0ulefjv\">\n      <bpmn:incoming>SequenceFlow_0h2woty</bpmn:incoming>\n    </bpmn:endEvent>\n    <bpmn:sequenceFlow id=\"SequenceFlow_0h2woty\" sourceRef=\"UserTask_0kqf8om\" targetRef=\"EndEvent_0ulefjv\" />\n    <bpmn:scriptTask id=\"ScriptTask_18w1n79\" name=\"validate line manager email address\" scriptFormat=\"javascript\">\n      <bpmn:incoming>SequenceFlow_16pir8u</bpmn:incoming>\n      <bpmn:outgoing>SequenceFlow_12ees6e</bpmn:outgoing>\n      <bpmn:script><![CDATA[var manager_email_id_tps = execution.getVariable(\"out_user_manager_email\");\nvar manager_email_id_user = execution.getVariable(\"line_manager_email_address\");\nvar valid_manager_email_id_flag = 0;\nif(manager_email_id_tps == manager_email_id_user)\n{\n  valid_manager_email_id_flag = 1;\n}\n\nexecution.setVariable(\"valid_manager_email_id_flag\" , valid_manager_email_id_flag);]]></bpmn:script>\n    </bpmn:scriptTask>\n    <bpmn:startEvent id=\"StartEvent_0xascgq\">\n      <bpmn:outgoing>SequenceFlow_04ddgtf</bpmn:outgoing>\n    </bpmn:startEvent>\n    <bpmn:sequenceFlow id=\"SequenceFlow_04ddgtf\" sourceRef=\"StartEvent_0xascgq\" targetRef=\"UserTask_0wc52pp\" />\n    <bpmn:userTask id=\"UserTask_0wc52pp\" name=\"run the workflow common_amelia_login_check\">\n      <bpmn:incoming>SequenceFlow_04ddgtf</bpmn:incoming>\n      <bpmn:outgoing>SequenceFlow_1jc439a</bpmn:outgoing>\n    </bpmn:userTask>\n    <bpmn:sequenceFlow id=\"SequenceFlow_1jc439a\" sourceRef=\"UserTask_0wc52pp\" targetRef=\"UserTask_05jiaxi\" />\n    <bpmn:userTask id=\"UserTask_05jiaxi\" name=\"say I am happy to help you with your leaver request.\">\n      <bpmn:incoming>SequenceFlow_1jc439a</bpmn:incoming>\n      <bpmn:outgoing>SequenceFlow_1fbknk5</bpmn:outgoing>\n    </bpmn:userTask>\n    <bpmn:sequenceFlow id=\"SequenceFlow_1fbknk5\" sourceRef=\"UserTask_05jiaxi\" targetRef=\"UserTask_1bye8br\" />\n    <bpmn:sequenceFlow id=\"SequenceFlow_1m5b4ha\" name=\"${valid_manager_email_id_flag == 1}\" sourceRef=\"ExclusiveGateway_1n1yjw0\" targetRef=\"UserTask_1031twj\" />\n    <bpmn:userTask id=\"UserTask_1031twj\" name=\"run the workflow common_get_wyid\">\n      <bpmn:incoming>SequenceFlow_1m5b4ha</bpmn:incoming>\n      <bpmn:outgoing>SequenceFlow_1qifuyz</bpmn:outgoing>\n    </bpmn:userTask>\n    <bpmn:sequenceFlow id=\"SequenceFlow_1qifuyz\" sourceRef=\"UserTask_1031twj\" targetRef=\"UserTask_0dde922\" />\n    <bpmn:userTask id=\"UserTask_0dde922\" name=\"run the workflow common_date_validator\">\n      <bpmn:incoming>SequenceFlow_1qifuyz</bpmn:incoming>\n      <bpmn:outgoing>SequenceFlow_04x677e</bpmn:outgoing>\n    </bpmn:userTask>\n    <bpmn:sequenceFlow id=\"SequenceFlow_04x677e\" sourceRef=\"UserTask_0dde922\" targetRef=\"UserTask_1hgsxy3\" />\n    <bpmn:userTask id=\"UserTask_1hgsxy3\" name=\"ask &#34;could you please provide the location for the leaver?&#34;\">\n      <bpmn:incoming>SequenceFlow_04x677e</bpmn:incoming>\n      <bpmn:outgoing>SequenceFlow_0gdp3c6</bpmn:outgoing>\n    </bpmn:userTask>\n    <bpmn:sequenceFlow id=\"SequenceFlow_0gdp3c6\" sourceRef=\"UserTask_1hgsxy3\" targetRef=\"ScriptTask_141dola\" />\n    <bpmn:scriptTask id=\"ScriptTask_141dola\" name=\"populate variable\" scriptFormat=\"javascript\">\n      <bpmn:incoming>SequenceFlow_0gdp3c6</bpmn:incoming>\n      <bpmn:outgoing>SequenceFlow_1moi65e</bpmn:outgoing>\n      <bpmn:script><![CDATA[execution.setVariable(\"user_location\",\"response\");]]></bpmn:script>\n    </bpmn:scriptTask>\n    <bpmn:sequenceFlow id=\"SequenceFlow_1moi65e\" sourceRef=\"ScriptTask_141dola\" targetRef=\"ScriptTask_10lpnbs\" />\n    <bpmn:scriptTask id=\"ScriptTask_10lpnbs\" name=\"init\" scriptFormat=\"javascript\">\n      <bpmn:incoming>SequenceFlow_1moi65e</bpmn:incoming>\n      <bpmn:outgoing>SequenceFlow_14nxmwn</bpmn:outgoing>\n      <bpmn:script><![CDATA[execution.setVariable(\"requested_by_email\",\"line_manager_email_address\");\n//execution.setVariable(\"requested_for_email\",\"line_manager_email_address\");\n]]></bpmn:script>\n    </bpmn:scriptTask>\n    <bpmn:sequenceFlow id=\"SequenceFlow_14nxmwn\" sourceRef=\"ScriptTask_10lpnbs\" targetRef=\"UserTask_16p2ccz\" />\n  </bpmn:process>\n  <bpmndi:BPMNDiagram id=\"BPMNDiagram_1\">\n    <bpmndi:BPMNPlane id=\"BPMNPlane_1\" bpmnElement=\"get_leaver_request\">\n      <bpmndi:BPMNShape id=\"UserTask_1bye8br_di\" bpmnElement=\"UserTask_1bye8br\">\n        <dc:Bounds x=\"325\" y=\"80\" width=\"100\" height=\"80\" />\n      </bpmndi:BPMNShape>\n      <bpmndi:BPMNEdge id=\"SequenceFlow_1udv1lf_di\" bpmnElement=\"SequenceFlow_1udv1lf\">\n        <di:waypoint xsi:type=\"dc:Point\" x=\"375\" y=\"80\" />\n        <di:waypoint xsi:type=\"dc:Point\" x=\"375\" y=\"-24\" />\n        <bpmndi:BPMNLabel>\n          <dc:Bounds x=\"432\" y=\"110\" width=\"90\" height=\"20\" />\n        </bpmndi:BPMNLabel>\n      </bpmndi:BPMNEdge>\n      <bpmndi:BPMNShape id=\"UserTask_1nli64u_di\" bpmnElement=\"UserTask_1nli64u\">\n        <dc:Bounds x=\"528.7231352718079\" y=\"80\" width=\"100\" height=\"80\" />\n      </bpmndi:BPMNShape>\n      <bpmndi:BPMNEdge id=\"SequenceFlow_07ez51u_di\" bpmnElement=\"SequenceFlow_07ez51u\">\n        <di:waypoint xsi:type=\"dc:Point\" x=\"425\" y=\"-64\" />\n        <di:waypoint xsi:type=\"dc:Point\" x=\"579\" y=\"-64\" />\n        <di:waypoint xsi:type=\"dc:Point\" x=\"579\" y=\"80\" />\n        <bpmndi:BPMNLabel>\n          <dc:Bounds x=\"432\" y=\"18\" width=\"90\" height=\"20\" />\n        </bpmndi:BPMNLabel>\n      </bpmndi:BPMNEdge>\n      <bpmndi:BPMNShape id=\"ScriptTask_0578ial_di\" bpmnElement=\"ScriptTask_0578ial\">\n        <dc:Bounds x=\"325\" y=\"-104\" width=\"100\" height=\"80\" />\n      </bpmndi:BPMNShape>\n      <bpmndi:BPMNEdge id=\"SequenceFlow_0jllia7_di\" bpmnElement=\"SequenceFlow_0jllia7\">\n        <di:waypoint xsi:type=\"dc:Point\" x=\"629\" y=\"120\" />\n        <di:waypoint xsi:type=\"dc:Point\" x=\"715\" y=\"120\" />\n        <bpmndi:BPMNLabel>\n          <dc:Bounds x=\"627\" y=\"110\" width=\"90\" height=\"20\" />\n        </bpmndi:BPMNLabel>\n      </bpmndi:BPMNEdge>\n      <bpmndi:BPMNShape id=\"UserTask_0az5d7h_di\" bpmnElement=\"UserTask_0az5d7h\">\n        <dc:Bounds x=\"715\" y=\"80\" width=\"100\" height=\"80\" />\n      </bpmndi:BPMNShape>\n      <bpmndi:BPMNEdge id=\"SequenceFlow_16pir8u_di\" bpmnElement=\"SequenceFlow_16pir8u\">\n        <di:waypoint xsi:type=\"dc:Point\" x=\"815\" y=\"120\" />\n        <di:waypoint xsi:type=\"dc:Point\" x=\"910\" y=\"120\" />\n        <bpmndi:BPMNLabel>\n          <dc:Bounds x=\"817.5\" y=\"110\" width=\"90\" height=\"20\" />\n        </bpmndi:BPMNLabel>\n      </bpmndi:BPMNEdge>\n      <bpmndi:BPMNShape id=\"ExclusiveGateway_1n1yjw0_di\" bpmnElement=\"ExclusiveGateway_1n1yjw0\" isMarkerVisible=\"true\">\n        <dc:Bounds x=\"1099\" y=\"95\" width=\"50\" height=\"50\" />\n        <bpmndi:BPMNLabel>\n          <dc:Bounds x=\"1079\" y=\"145\" width=\"90\" height=\"20\" />\n        </bpmndi:BPMNLabel>\n      </bpmndi:BPMNShape>\n      <bpmndi:BPMNEdge id=\"SequenceFlow_12ees6e_di\" bpmnElement=\"SequenceFlow_12ees6e\">\n        <di:waypoint xsi:type=\"dc:Point\" x=\"1010\" y=\"120\" />\n        <di:waypoint xsi:type=\"dc:Point\" x=\"1099\" y=\"120\" />\n        <bpmndi:BPMNLabel>\n          <dc:Bounds x=\"1009.5\" y=\"110\" width=\"90\" height=\"20\" />\n        </bpmndi:BPMNLabel>\n      </bpmndi:BPMNEdge>\n      <bpmndi:BPMNEdge id=\"SequenceFlow_1o4w23w_di\" bpmnElement=\"SequenceFlow_1o4w23w\">\n        <di:waypoint xsi:type=\"dc:Point\" x=\"1149\" y=\"120\" />\n        <di:waypoint xsi:type=\"dc:Point\" x=\"1267\" y=\"120\" />\n        <bpmndi:BPMNLabel>\n          <dc:Bounds x=\"1162\" y=\"75\" width=\"90\" height=\"20\" />\n        </bpmndi:BPMNLabel>\n      </bpmndi:BPMNEdge>\n      <bpmndi:BPMNShape id=\"UserTask_0pi73f1_di\" bpmnElement=\"UserTask_0pi73f1\">\n        <dc:Bounds x=\"1267\" y=\"80\" width=\"100\" height=\"80\" />\n      </bpmndi:BPMNShape>\n      <bpmndi:BPMNEdge id=\"SequenceFlow_04gesmp_di\" bpmnElement=\"SequenceFlow_04gesmp\">\n        <di:waypoint xsi:type=\"dc:Point\" x=\"1367\" y=\"120\" />\n        <di:waypoint xsi:type=\"dc:Point\" x=\"1471\" y=\"120\" />\n        <bpmndi:BPMNLabel>\n          <dc:Bounds x=\"1374\" y=\"110\" width=\"90\" height=\"20\" />\n        </bpmndi:BPMNLabel>\n      </bpmndi:BPMNEdge>\n      <bpmndi:BPMNShape id=\"UserTask_0pyd7y2_di\" bpmnElement=\"UserTask_0pyd7y2\">\n        <dc:Bounds x=\"1471\" y=\"80\" width=\"100\" height=\"80\" />\n      </bpmndi:BPMNShape>\n      <bpmndi:BPMNEdge id=\"SequenceFlow_0thf1mi_di\" bpmnElement=\"SequenceFlow_0thf1mi\">\n        <di:waypoint xsi:type=\"dc:Point\" x=\"1571\" y=\"120\" />\n        <di:waypoint xsi:type=\"dc:Point\" x=\"1672\" y=\"120\" />\n        <bpmndi:BPMNLabel>\n          <dc:Bounds x=\"1576.5\" y=\"110\" width=\"90\" height=\"20\" />\n        </bpmndi:BPMNLabel>\n      </bpmndi:BPMNEdge>\n      <bpmndi:BPMNShape id=\"UserTask_096i6e2_di\" bpmnElement=\"UserTask_096i6e2\">\n        <dc:Bounds x=\"1672\" y=\"80\" width=\"100\" height=\"80\" />\n      </bpmndi:BPMNShape>\n      <bpmndi:BPMNShape id=\"EndEvent_0yw7n7f_di\" bpmnElement=\"EndEvent_0yw7n7f\">\n        <dc:Bounds x=\"1841\" y=\"102\" width=\"36\" height=\"36\" />\n        <bpmndi:BPMNLabel>\n          <dc:Bounds x=\"1814\" y=\"138\" width=\"90\" height=\"20\" />\n        </bpmndi:BPMNLabel>\n      </bpmndi:BPMNShape>\n      <bpmndi:BPMNEdge id=\"SequenceFlow_0qy1ks0_di\" bpmnElement=\"SequenceFlow_0qy1ks0\">\n        <di:waypoint xsi:type=\"dc:Point\" x=\"1772\" y=\"120\" />\n        <di:waypoint xsi:type=\"dc:Point\" x=\"1841\" y=\"120\" />\n        <bpmndi:BPMNLabel>\n          <dc:Bounds x=\"1761.5\" y=\"110\" width=\"90\" height=\"20\" />\n        </bpmndi:BPMNLabel>\n      </bpmndi:BPMNEdge>\n      <bpmndi:BPMNShape id=\"UserTask_16p2ccz_di\" bpmnElement=\"UserTask_16p2ccz\">\n        <dc:Bounds x=\"1074\" y=\"592\" width=\"100\" height=\"80\" />\n      </bpmndi:BPMNShape>\n      <bpmndi:BPMNEdge id=\"SequenceFlow_1jbpyuq_di\" bpmnElement=\"SequenceFlow_1jbpyuq\">\n        <di:waypoint xsi:type=\"dc:Point\" x=\"1124\" y=\"672\" />\n        <di:waypoint xsi:type=\"dc:Point\" x=\"1124\" y=\"744\" />\n        <bpmndi:BPMNLabel>\n          <dc:Bounds x=\"1079\" y=\"698\" width=\"90\" height=\"20\" />\n        </bpmndi:BPMNLabel>\n      </bpmndi:BPMNEdge>\n      <bpmndi:BPMNShape id=\"UserTask_0kqf8om_di\" bpmnElement=\"UserTask_0kqf8om\">\n        <dc:Bounds x=\"1074\" y=\"744\" width=\"100\" height=\"80\" />\n      </bpmndi:BPMNShape>\n      <bpmndi:BPMNShape id=\"EndEvent_0ulefjv_di\" bpmnElement=\"EndEvent_0ulefjv\">\n        <dc:Bounds x=\"1106\" y=\"899\" width=\"36\" height=\"36\" />\n        <bpmndi:BPMNLabel>\n          <dc:Bounds x=\"1079\" y=\"935\" width=\"90\" height=\"20\" />\n        </bpmndi:BPMNLabel>\n      </bpmndi:BPMNShape>\n      <bpmndi:BPMNEdge id=\"SequenceFlow_0h2woty_di\" bpmnElement=\"SequenceFlow_0h2woty\">\n        <di:waypoint xsi:type=\"dc:Point\" x=\"1124\" y=\"824\" />\n        <di:waypoint xsi:type=\"dc:Point\" x=\"1124\" y=\"899\" />\n        <bpmndi:BPMNLabel>\n          <dc:Bounds x=\"1079\" y=\"851.5\" width=\"90\" height=\"20\" />\n        </bpmndi:BPMNLabel>\n      </bpmndi:BPMNEdge>\n      <bpmndi:BPMNShape id=\"ScriptTask_18w1n79_di\" bpmnElement=\"ScriptTask_18w1n79\">\n        <dc:Bounds x=\"910\" y=\"80\" width=\"100\" height=\"80\" />\n      </bpmndi:BPMNShape>\n      <bpmndi:BPMNShape id=\"StartEvent_0xascgq_di\" bpmnElement=\"StartEvent_0xascgq\">\n        <dc:Bounds x=\"-78.50548523206751\" y=\"102.25738396624473\" width=\"36\" height=\"36\" />\n        <bpmndi:BPMNLabel>\n          <dc:Bounds x=\"-105.50548523206751\" y=\"138.25738396624473\" width=\"90\" height=\"20\" />\n        </bpmndi:BPMNLabel>\n      </bpmndi:BPMNShape>\n      <bpmndi:BPMNEdge id=\"SequenceFlow_04ddgtf_di\" bpmnElement=\"SequenceFlow_04ddgtf\">\n        <di:waypoint xsi:type=\"dc:Point\" x=\"-42\" y=\"120\" />\n        <di:waypoint xsi:type=\"dc:Point\" x=\"-4\" y=\"120\" />\n        <bpmndi:BPMNLabel>\n          <dc:Bounds x=\"-65\" y=\"104.5\" width=\"90\" height=\"20\" />\n        </bpmndi:BPMNLabel>\n      </bpmndi:BPMNEdge>\n      <bpmndi:BPMNShape id=\"UserTask_0wc52pp_di\" bpmnElement=\"UserTask_0wc52pp\">\n        <dc:Bounds x=\"-3.505485232067514\" y=\"80\" width=\"100\" height=\"80\" />\n      </bpmndi:BPMNShape>\n      <bpmndi:BPMNEdge id=\"SequenceFlow_1jc439a_di\" bpmnElement=\"SequenceFlow_1jc439a\">\n        <di:waypoint xsi:type=\"dc:Point\" x=\"96\" y=\"120\" />\n        <di:waypoint xsi:type=\"dc:Point\" x=\"141\" y=\"120\" />\n        <bpmndi:BPMNLabel>\n          <dc:Bounds x=\"73.5\" y=\"110\" width=\"90\" height=\"20\" />\n        </bpmndi:BPMNLabel>\n      </bpmndi:BPMNEdge>\n      <bpmndi:BPMNShape id=\"UserTask_05jiaxi_di\" bpmnElement=\"UserTask_05jiaxi\">\n        <dc:Bounds x=\"141.4945147679325\" y=\"80\" width=\"100\" height=\"80\" />\n      </bpmndi:BPMNShape>\n      <bpmndi:BPMNEdge id=\"SequenceFlow_1fbknk5_di\" bpmnElement=\"SequenceFlow_1fbknk5\">\n        <di:waypoint xsi:type=\"dc:Point\" x=\"241\" y=\"120\" />\n        <di:waypoint xsi:type=\"dc:Point\" x=\"325\" y=\"120\" />\n        <bpmndi:BPMNLabel>\n          <dc:Bounds x=\"238\" y=\"110\" width=\"90\" height=\"20\" />\n        </bpmndi:BPMNLabel>\n      </bpmndi:BPMNEdge>\n      <bpmndi:BPMNEdge id=\"SequenceFlow_1m5b4ha_di\" bpmnElement=\"SequenceFlow_1m5b4ha\">\n        <di:waypoint xsi:type=\"dc:Point\" x=\"1124\" y=\"145\" />\n        <di:waypoint xsi:type=\"dc:Point\" x=\"1124\" y=\"206\" />\n        <bpmndi:BPMNLabel>\n          <dc:Bounds x=\"1079\" y=\"165.5\" width=\"90\" height=\"20\" />\n        </bpmndi:BPMNLabel>\n      </bpmndi:BPMNEdge>\n      <bpmndi:BPMNShape id=\"UserTask_1031twj_di\" bpmnElement=\"UserTask_1031twj\">\n        <dc:Bounds x=\"1074\" y=\"206.20657894736843\" width=\"100\" height=\"80\" />\n      </bpmndi:BPMNShape>\n      <bpmndi:BPMNEdge id=\"SequenceFlow_1qifuyz_di\" bpmnElement=\"SequenceFlow_1qifuyz\">\n        <di:waypoint xsi:type=\"dc:Point\" x=\"1124\" y=\"286\" />\n        <di:waypoint xsi:type=\"dc:Point\" x=\"1124\" y=\"311\" />\n        <bpmndi:BPMNLabel>\n          <dc:Bounds x=\"1079\" y=\"288.5\" width=\"90\" height=\"20\" />\n        </bpmndi:BPMNLabel>\n      </bpmndi:BPMNEdge>\n      <bpmndi:BPMNShape id=\"UserTask_0dde922_di\" bpmnElement=\"UserTask_0dde922\">\n        <dc:Bounds x=\"1074\" y=\"311.2065789473684\" width=\"100\" height=\"80\" />\n      </bpmndi:BPMNShape>\n      <bpmndi:BPMNEdge id=\"SequenceFlow_04x677e_di\" bpmnElement=\"SequenceFlow_04x677e\">\n        <di:waypoint xsi:type=\"dc:Point\" x=\"1174\" y=\"351\" />\n        <di:waypoint xsi:type=\"dc:Point\" x=\"1251\" y=\"351\" />\n        <bpmndi:BPMNLabel>\n          <dc:Bounds x=\"1167.5\" y=\"341\" width=\"90\" height=\"20\" />\n        </bpmndi:BPMNLabel>\n      </bpmndi:BPMNEdge>\n      <bpmndi:BPMNShape id=\"UserTask_1hgsxy3_di\" bpmnElement=\"UserTask_1hgsxy3\">\n        <dc:Bounds x=\"1250.7065789473686\" y=\"311\" width=\"100\" height=\"80\" />\n      </bpmndi:BPMNShape>\n      <bpmndi:BPMNEdge id=\"SequenceFlow_0gdp3c6_di\" bpmnElement=\"SequenceFlow_0gdp3c6\">\n        <di:waypoint xsi:type=\"dc:Point\" x=\"1351\" y=\"351\" />\n        <di:waypoint xsi:type=\"dc:Point\" x=\"1418\" y=\"351\" />\n        <bpmndi:BPMNLabel>\n          <dc:Bounds x=\"1339.5\" y=\"341\" width=\"90\" height=\"20\" />\n        </bpmndi:BPMNLabel>\n      </bpmndi:BPMNEdge>\n      <bpmndi:BPMNShape id=\"ScriptTask_141dola_di\" bpmnElement=\"ScriptTask_141dola\">\n        <dc:Bounds x=\"1417.7065789473686\" y=\"311\" width=\"100\" height=\"80\" />\n      </bpmndi:BPMNShape>\n      <bpmndi:BPMNEdge id=\"SequenceFlow_1moi65e_di\" bpmnElement=\"SequenceFlow_1moi65e\">\n        <di:waypoint xsi:type=\"dc:Point\" x=\"1468\" y=\"391\" />\n        <di:waypoint xsi:type=\"dc:Point\" x=\"1468\" y=\"592\" />\n        <bpmndi:BPMNLabel>\n          <dc:Bounds x=\"1423\" y=\"481.5\" width=\"90\" height=\"20\" />\n        </bpmndi:BPMNLabel>\n      </bpmndi:BPMNEdge>\n      <bpmndi:BPMNShape id=\"ScriptTask_10lpnbs_di\" bpmnElement=\"ScriptTask_10lpnbs\">\n        <dc:Bounds x=\"1418\" y=\"592\" width=\"100\" height=\"80\" />\n      </bpmndi:BPMNShape>\n      <bpmndi:BPMNEdge id=\"SequenceFlow_14nxmwn_di\" bpmnElement=\"SequenceFlow_14nxmwn\">\n        <di:waypoint xsi:type=\"dc:Point\" x=\"1418\" y=\"632\" />\n        <di:waypoint xsi:type=\"dc:Point\" x=\"1174\" y=\"632\" />\n        <bpmndi:BPMNLabel>\n          <dc:Bounds x=\"1251\" y=\"622\" width=\"90\" height=\"20\" />\n        </bpmndi:BPMNLabel>\n      </bpmndi:BPMNEdge>\n    </bpmndi:BPMNPlane>\n  </bpmndi:BPMNDiagram>\n</bpmn:definitions>\n",
+			"file": "/home/sasharma/Desktop/get_leaver_request_5-0.bpmn",
+			"file_size": 20109,
+			"file_write_time": 131251395952031372,
+			"settings":
+			{
+				"buffer_size": 20109,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "#Global Macros\n\n#define ticketPattern (INC|REQ)[0-9]{7,12}\n\n[@intensifier]\n\t(amazingly)\n\t(astoundingly)\n\t(bloody)\n\t(dreadfully)\n\t(colossally)\n\t(especially)\n\t(exceptionally)\n\t(excessively)\n\t(extremely)\n\t(extraordinarily)\n\t(fantastically)\n\t(frightfully)\n\t(fully)\n\t(hella)\n\t(incredibly)\n\t(insanely)\n\t(literally)\n\t(mightily)\n\t(moderately)\n\t(outrageously)\n\t(phenomenally)\n\t(quite)\n\t(radically)\n\t(really)\n\t(remarkably)\n\t(somewhat)\n\t(strikingly)\n\t(super)\n\t(supremely)\n\t(surpassingly)\n\t(terribly)\n\t(terrifically)\n\t(too)\n\t(so)\n\t(totally)\n\t(uncommonly)\n\t(unusually)\n\t(veritable)\n\t(very)\n;\n\n[@with]\n\t(with)\n\t(wiz)\n\t(wid)\n;\n\n[@to]\n\t(for)\n\t(to *be)\n\t(in order to)\n\t(in order for)\n\t(of)\n\t(using)\n\t(on *to)\n\t(in *to)\n\t(into)\n\t(from)\n\t([@with])\n\t(about)\n;\n\n[@an]\n\t(a)\n\t(an)\n\t(the)\n\t(his)\n\t(her)\n\t(hers)\n\t(their)\n\t(theirs)\n\t(my)\n\t(mine)\n\t(our)\n\t(its)\n\t(it)\n\t(its)\n\t(it's)\n\t(it is)\n;\n\n[@user]\n\t(i)\n\t(me)\n\t(we *are)\n\t(us)\n\t(*[@an] user)\n\t(*[@an] users)\n\t(*[@an] customer)\n\t(*[@an] customers)\n\t(i'll)\n\t(i'd)\n\t(i'm)\n\t(im)\n\t(i am)\n\t(we're)\n\t(myself)\n\t(my)\n;\n\n[@you]\n\t(you)\n\t(your)\n\t(u)\n\t(yo)\n\t(someone)\n\t(some one)\n\t(some1)\n\t(some 1)\n\t(some body)\n\t(somebody)\n\t(anyone)\n\t(any one)\n\t(any1)\n\t(any 1)\n\t(he)\n\t(she)\n\t(they)\n;\n\n[@is]\n\t(is)\n\t(am)\n\t(are)\n\t(was)\n\t(were)\n;\n\n[@will]\n\t(will)\n\t(would)\n\t(shall)\n\t(should)\n\t(can)\n\t(could)\n\t(may)\n\t(might)\n\t(must)\n\t(had to)\n\t(have got to)\n\t(ought to)\n\t(had better)\n\t(used to)\n;\n\n[@have]\n\t(*must have *been)\n\t(has *been)\n\t(had *been)\n\t(do)\n\t(does)\n\t(did)\n\t(done)\n\t([@is] *being)\n;\n\n[@negation]\n\t(not)\n\t(noot)\n\t(nt)\n\t(no)\n\t(un)\n\t(in)\n\t(isn´t)\n\t(isnt)\n\t(was not)\n\t(was'nt)\n\t(wasnt)\n\t(wasnot)\n\t([@is] not)\n\t([@will] not)\n\t(won't)\n\t(wont)\n\t(can´t)\n\t(cant)\n\t(cannot)\n\t(canot)\n\t(cann)\n\t(couldn´t)\n\t(couldnot)\n\t(would'nt)\n\t(wouldnt)\n\t(wouldnot)\n\t(doesn't)\n\t(doesent)\n\t(does not)\n\t(doesnot)\n\t(did not)\n\t(didn't)\n\t(didnot)\n\t(didnt)\n\t(don't)\n\t(dont)\n\t(do not)\n\t(donot)\n\t(shallnot)\n\t(shalln't)\n\t(unable)\n\t(wrong)\n\t([@have] not)\n;\n\n[@help]\n\t(help *[@user] *[@with])\n\t(helped *[@user] *[@with])\n\t(helping *[@user] *[@with])\n\t(assist *[@user] *[@with])\n\t(assistance *[@user] *[@with])\n\t(assisted *[@user] *[@with])\n\t(assisting *[@user] *[@with])\n\t(support *[@user] *[@with])\n\t(supported *[@user] *[@with])\n\t(supporting *[@user] *[@with])\n\t(help *[@user] *[@to])\n\t(get *[@user] reminded about)\n;\n\n[@question]\n\t(why)\n\t(why'd)\n\t(why's)\n\t(why'll)\n\t(what *else)\n\t(what's)\n\t(whats)\n\t(what'd)\n\t(what'll)\n\t(when)\n\t(when's)\n\t(when'd)\n\t(when'll)\n\t(where)\n\t(where's)\n\t(wheres)\n\t(where'll)\n\t(where'd)\n\t(how *much)\n\t(how many)\n\t(how's)\n\t(hows)\n\t(how'll)\n\t(how'd)\n\t([@will] [@you])\n\t([@will] [@user])\n\t(which)\n\t(which's)\n\t(which'd)\n\t(which'll)\n\t(whose)\n;\n\n[@different]\n\t(*[@an] different)\n\t(*[@an] diferent)\n\t(*[@an] dfrnt)\n\t(*[@an] other)\n\t(*[@an] othr)\n\t(*[@an] another)\n\t(*[@an] anthr)\n\t(*[@an] new)\n\t(*[@an] nw)\n\t(*[@an] newer)\n\t(*[@an] old)\n\t(*[@an] fresh)\n;\n\n[@login]\n\t(login *[@to])\n\t(log *in *[@to])\n\t(logged *in *[@to])\n\t(loged *in *[@to])\n\t(logging *in *[@to])\n\t(loggin *in *[@to])\n\t(loging *in *[@to])\n\t(log-in *[@to])\n\t(log on *[@to])\n\t(log-on *[@to])\n\t(logon *[@to])\n\t([@access])\n\t(get in)\n\t(getting in)\n\t(get into)\n\t(getting into)\n\t(open)\n;\n\n[@access]\n\t(access)\n\t(accesses)\n\t(accessing)\n\t(accessible)\n\t(acces)\n\t(acess)\n\t(aces)\n;\n\n[@boot]\n\t(boot *up)\n\t(boots)\n\t(booting)\n\t(booted)\n\t(bootup)\n\t(start)\n\t(starts)\n\t(started)\n\t(starting)\n\t(begin)\n\t(begins)\n\t(began)\n\t(begun)\n\t(open)\n\t(turn *on)\n\t(turning *on)\n\t(turnon)\n\t(power *on)\n\t(powering *on)\n\t(power *up)\n\t(powering *up)\n\t([@work])\n;\n\n[@password]\n\t(*[@different] password)\n\t(*[@different] pasword)\n\t(*[@different] pass *word)\n\t(*[@login] credentials)\n\t(*[@login] credential)\n\t([@login] *credentials)\n\t([@login] *credential)\n\t(*[@login] pwd)\n\t(*[@login] pw)\n\t(*pass key)\n\t(*pass code)\n\t(*[@login] passcode)\n\t(*[@login] pin)\n\t(*pin code)\n\t(pin *code)\n\t(pin phrase)\n\t(security key)\n;\n\n[@account]\n\t(account)\n\t(accounts)\n\t(acount)\n\t(acounts)\n;\n\n[@forgot]\n\t(*[@have] forgot)\n\t(*[@have] forget)\n\t(*[@have] forgotten)\n\t(*[@have] forgoten)\n\t(*[@have] forgetting)\n\t(*[@have] forgeting)\n\t([@negation] [@remember])\n\t([@negation] [@know])\n\t(lost)\n\t(miss)\n\t(missed)\n;\n\n[@remember]\n\t(remember)\n\t(remembered)\n\t(remembering)\n\t(recall)\n;\n\n#needs refinement\n[@want]\n\t(*[@will] need *[@to])\n\t(needs *[@to])\n\t(in need)\n\n\t(*[@will] want *[@to])\n\t(wants *[@to])\n\t(wanna *[@to])\n\n\t(*[@will] wanted *[@to])\n\t(*[@will] wanting *[@to])\n\n\t(*[@will] like *[@to])\n\t(*[@will] liked *[@to])\n\n\t([@will] *i)\n\t(attempt *[@to])\n\t(attempting *[@to])\n\t(desperate *[@to])\n\n\t([@will] [@you] *[@help])\n\t(ask *about)\n\t(asking *about)\n\t(asked *about)\n\t([@will] [@have])\n\n\t(*[@user] need *[@to])\n\t(*[@user] needs *[@to])\n;\n\n[@unlock]\n\t(unlock)\n\t(un-lock)\n\t(un lock)\n\t(unlocking)\n\t(un-locking)\n\t(un locking)\n\t(unlocked)\n\t(un-locked)\n\t(un locked)\n\t(ulock)\n\t(unlck)\n;\n\n[@reset]\n\t([@change])\n\t([@unlock])\n\t(reset)\n\t(rset)\n\t(rst)\n\t(re-set)\n\t(resetting)\n\t(reseting)\n\t(re-setting)\n\t(re-seting)\n\t(clear)\n\t(cleared)\n\t(clearing)\n\t(get)\n\t(provide)\n\t(provided)\n\t(providing)\n\t(regain)\n\t(regained)\n\t(regaining)\n\t(re-gain)\n\t(re-gained)\n\t(re-gaining)\n\t(reinstate)\n\t(reinstated)\n\t(reinstating)\n\t(re-instate)\n\t(re-instated)\n\t(re-instating)\n\t(retrieve)\n\t(retrieved)\n\t(retrieving)\n\t(retreive)\n\t(retreived)\n\t(retreiving)\n\t(recover)\n\t(recovers)\n\t(recovered)\n\t(recovering)\n\t(restore)\n\t(restores)\n\t(restored)\n\t(restoring)\n\t(set)\n\t(sets)\n\t(setting)\n\t(generate)\n\t(generates)\n\t(generated)\n\t(generating)\n\t(replace)\n\t(replaces)\n\t(replacing)\n\t(replaced)\n;\n\n[@fail]\n\t(loose)\n\t(lose)\n\t(lost)\n\t(fail)\n\t(failed)\n\t(failing)\n\t(lock *out)\n\t(locked *out)\n\t(blocked)\n\t(expire)\n\t(expired)\n\t(expiring)\n\t(ended)\n\t(terminated)\n\t(unsuccessful)\n\t(un-successful)\n\t(disable)\n\t(disabled)\n\t([@forgot])\n\t([@negation] [@login])\t#to be removed as it's too specific to login failure (KH)\n;\n\n[@yes]\t#(KH_added_20-7-2016)\n\t(yes)\n\t(yea)\n\t(yeah)\n\t(yep)\n\t(yeap)\n\t(correct)\t#as a noun\n\t(okay)\n\t(ok)\n\t(true)\n\t(*all right)\n\t(allright)\n\t(alright)\n\t(fine)\n\t(certainly)\n\t(definitely)\n\t(of course)\n\t(positively)\n\t(precisely)\n\t(exactly)\n\t(gladly)\n\t(willingly)\n\t(naturally)\n\t(undoubtedly)\n\t(unquestionably)\n\t(sure thing)\n\t(surely)\n\t(indubitably)\n\t(*most assuredly)\n\t(good *enough)\n\t(very well)\n\t(affirmative)\n\t(granted)\n\t(amen)\n\t(aye)\n\t(beyond a doubt)\n\t(by all means)\n\t(even so)\n\t(just so)\n\t(without fail)\n;\n\n[@no]\n\t(incorrect)\n\t(incorect)\n\t(wrong)\n\t(bad)\n\t([@negation] [@yes])\n\t(no *way)\n\t(negative)\n\t(nix)\n\t(na)\n\t(naa)\n\t(nope)\n\t(nop)\n\t(never)\n\t(*absolutely not)\n\t(not *at all)\n\t(by no means)\n\t(not by any means)\n\t(strange)\n;\n\n[@windows]\n\t(window)\n\t(windows)\n\t(win)\n\t(win7)\n\t(windows 7)\n\t(windows7)\n\t(win8)\n\t(windows 8)\n\t(windows8)\n\t(win10)\n\t(windows 10)\n\t(windows10)\n\t(nt)\n;\n\n[@device]\n\t(device)\n\t(computer)\n\t(comp)\n\t(pc)\n\t(personal computer)\n\t(laptop)\n\t(lap)\n\t(lappy)\n\t(machine)\n\t(desktop)\n;\n\n[@email]\n\t(email)\n\t(emails)\n\t(e-mail)\n\t(e-mails)\n\t(mail)\n\t(mails)\n\t(e mail)\n\t(e mails)\n\t(mailbox)\n;\n\n[@please]\n\t(please)\n\t(pls)\n\t(plz)\n\t(svp)\n\t(kind)\n\t(kindly)\n;\n\n[@able]\n\t(able)\n\t(allowed)\n;\n\n[@unable]\n\t([@negation] *[@able])\n\t([@negation] [@allow])\n;\n\n[@latest]\n\t(latest)\n\t(last)\n\t(new)\n\t(newest)\n;\n\n[@provide]\n\t(get)\n\t(got)\n\t(gotten)\n\t(goten)\n\t(provide *[@user] *[@with])\n\t(provided *[@user] *[@with])\n\t(providing *[@user] *[@with])\n\t(give *[@user])\n\t(gave *[@user])\n\t(given *[@user])\n\t(tell *[@user] *that)\n\t(told *[@user] *that)\n\t(say *that)\n\t(says *that)\n\t(said *that)\n;\n\n[@try]\n\t(trial)\n\t(try *[@to])\n\t(tried *[@to])\n\t(tryout)\n\n\t(attempt *[@to])\n\t(attempts *[@to])\n\t(attempting *[@to])\n\t(experiment)\n\t(experimented)\n\t(experimenting)\n\t(pursuit)\n\t(pursue)\n\t(pursued)\n\t(pursuing)\n\t(struggle)\n\t(struggled)\n\t(struggling)\n\t(strive)\n\t(strives)\n\t(strived)\n\t(strove)\n\t(striving)\n#(pin code entries)\t\t#(Remove_04-08-2016_KH_Too Specific)\n;\n\n[@at]\n\t(at)\n\t(in)\n\t(on)\n;\n\n[@know]\n\t(find)\n\t(get)\n\t(acquire)\n\t(know *about)\n\t(acquire)\n\t(display)\n\t(see)\n\t(getting)\n\t(loged in)\n\t(logged in)\n\t([@receive])\n\t(provide)\n\t(provided)\n\t(access)\n\t(to go into)\n\t(reaching)\n\t(show)\n\t(login)\n;\n\n[@enter]\n\t(*to enter)\n\t(entered)\n\t(entering)\n\t(entre)\n;\n\n[@submit]\n\t(submit)\n\t(submitted)\n\t(submitting)\n\t([@enter])\n\t(report)\n;\n\n[@shutdown]\n\t(shutdown)\n\t(shut down)\n\t(shuts down)\n;\n\n[@allow]\n\t(allow *[@user] *[@to])\n\t(allowed *[@user] *[@to])\n;\n\n[@resolve]\n\t(fix)\n\t(fixing)\n\t(fixed)\n\t(resolve)\n\t(resolved)\n\t(resolving)\n\t(solution)\n\t(resolution)\n;\n\n[@time]\n\t(time)\n\t(duration)\n;\n\n[@short]\n\t(*[@intensifier] less)\n\t(*[@intensifier] lesser)\n\t(*[@intensifier] short)\n\t(*[@intensifier] shoter)\n\t(*[@intensifier] low)\n\t(*[@intensifier] lower)\n\t(*[@intensifier] decrease)\n\t(*[@intensifier] decreas)\n;\n\n[@long]\n\t(*[@intensifier] long)\n\t(*[@intensifier] big)\n\t(*[@intensifier] great)\n\t(*[@intensifier] longer)\n;\n\n[@work]\n\t(work)\n\t(works)\n\t(worked)\n\t(working)\n\t(function)\n\t(functions)\n\t(functioning)\n\t(operate)\n\t(operates)\n\t(operated)\n\t(operating)\n;\n[@delay]\n\t(delay)\n\t(delays)\n\t(delayed)\n\t(delaying)\n\t(late)\n;\n\n[@hurry]\n\t(fast)\n\t(faster)\n\t(hurry *up)\n\t(accelerate)\n\t(quick)\n\t(quicker)\n#(upgrade)\n\t(shortly)\n;\n\n[@deliver]\n\t(deliver)\n\t(delivers)\n\t(delivering)\n\t(*to *be delivered)\n;\n\n[@approve]\n\t(approve)\n\t(approved)\n\t(approving)\n\t(approval)\n\t(accept)\n\t(accepted)\n\t(accepting)\n\t(acceptance)\n;\n\n[@handle]\n\t(handle)\n\t(handling)\n\t(handled)\n\t(handler)\n;\n\n[@similar]\n\t(similar *to)\n\t(like)\n\t(alike)\n\t(same *as)\n;\n\n[@because]\n\t(because)\n\t(to)\n\t(in order to)\n\t(in order for)\n\t(as)\n\t(as a result of)\n\t(as long as)\n\t(as things go)\n\t(being)\n\t(by cause of)\n\t(by reason of)\n\t(by virtue of)\n\t(considering)\n\t(due to)\n\t(for)\n\t(for the reason that)\n\t(for the sake of)\n\t(in as much as)\n\t(in that)\n\t(in the interest of)\n\t(in view of)\n\t(over)\n\t(since)\n\t(through)\n\t(whereas)\n;\n\n[@wait]\n\t(wait)\n\t(waits)\n\t(waited)\n\t(waiting)\n\t(await)\n\t(awaits)\n\t(awaiting)\n\t(interval)\n\t(down *time)\n\t(downtime)\n\t(halt)\n\t(hold *on)\n\t(hold-on)\n\t(interim)\n\t(rest)\n\t(stay)\n\t(stayed)\n\t(staying)\n\t(hold up)\n\t(hold-up)\n\t(on hold)\n\t(time wasted)\n;\n\n[@ticket]\n\t(*remedy ticket *number)\n\t(*remedy ticet *number)\n\t(*remedy tickets *number)\n\t(*remedy ticket numbers)\n\t(*remedy ticket reference)\n\t(*remedy tkt)\n\t(*remedy incident *number)\n\t(*remedy incedint *number)\n\t(*remedy incedent *number)\n\t(*remedy complain)\n\t(ticketPattern)\n;\n\n[@use]\n\t(use)\n\t(usage)\n\t(uses)\n\t(using)\n\t(used)\n;\n\n[@recognize]\n\t(recognize)\n\t(recognized)\n\t(recognizing)\n\t(recognise)\n\t(recognised)\n\t(recognising)\n;\n\n[@regarding]\n\t(regarding)\n\t(about)\n\t(as regards)\n\t(as to)\n\t(in regard to)\n\t(in relation to)\n\t(with reference to)\n\t(with regard to)\n\t(relating)\n\t(due to)\n;\n\n[@progress]\n\t(progress)\n\t(progression)\n\t(progressing)\n\t(progressed)\n\t(progressive)\n\t(pace)\n\t(improve)\n\t(improving)\n\t(improved)\n\t(improvement)\n\t(increase)\n\t(increased)\n\t(increasing)\n\t(rate)\n\t(ongoing)\n\t(step forward)\n;\n\n[@receive]\n\t(receive)\n\t(receives)\n\t(received)\n\t(receiving)\n\t(recieve)\n\t(recieves)\n\t(recieved)\n\t(recieving)\n;\n\n[@issue]\n\t(issue)\n\t(issues)\n\t(problem)\n\t(problems)\n\t(concern)\n\t(concerns)\n\t(controversery)\n\t(contention)\n\t(error)\n\t(errors)\n\t(bug)\n\t(bugs)\n;\n\n[@phone]\n\t(*mobile phone)\n\t(*mobile phones)\n\t(mobile *device)\n\t(mobiles)\n\t(handy)\n\t(handset)\n\t(handsets)\n\t(tablet)\n\t(tablets)\n\t(tab)\n\t(smartphone)\n\t(smartphones)\n\t(smart phone)\n\t(smart phones)\n\t(iphone)\n\t(iphones)\n\t(ipad)\n\t(handheld device)\n;\n\n[@change]\n\t(change)\n\t(changes)\n\t(changed)\n\t(changing)\n\t(changeable)\n\t(update)\n\t(updates)\n\t(updating)\n\t(updated)\n\t(adjust)\n\t(adjustment)\n\t(adjusting)\n\t(adjusted)\n\t(adjustable)\n\t(turn)\n\t(turning)\n\t(turned)\n\t(correct)\n\t(corrected)\n\t(correcting)\n\t(modify)\n\t(modified)\n\t(modification)\n\t(modifying)\n;\n\n[@synchronize]\n\t(synchronize)\n\t(synchronizes)\n\t(synchronized)\n\t(synchronizing)\n\t(synchronization)\n\t(synchronise)\n\t(synchronises)\n\t(synchronised)\n\t(synchronising)\n\t(sync)\n\t(syncing)\n\t(synced)\n\t(syncs)\n\t(synch)\n\t(synchs)\n\t(synching)\n;\n\n[@call]\n\t(*[@phone] call)\n\t(*[@phone] calls)\n\t(*[@phone] calling)\n\t(*[@phone] called)\n\t(*[@phone] caller)\n;\n\n[@save]\n\t(save)\n\t(saved)\n\t(saving)\n;\n\n",
+			"settings":
+			{
+				"buffer_size": 11780,
+				"line_ending": "Unix",
+				"name": "#Global Macros"
+			}
+		},
+		{
+			"file": "/home/sasharma/.m2/settings.xml",
+			"settings":
+			{
+				"buffer_size": 1784,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/sasharma/Desktop/conversations.csv",
+			"settings":
+			{
+				"buffer_size": 2443524,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "var flag=0;\nvar vld_mail = 0;\nvar loopCount=execution.getVariable(\"loopCount\");\nvar emailList=execution.getVariable(\"email_list\");\n//var email_address=\"user.ameliatesting3@vodafone.com\";\n//var emailList=\"user.ameliatesting1@vodafone.com,user.ameliatesting2@vodafone.com,user.ameliatesting3@vodafone.com\";\nvar email_address=execution.getVariable(\"email_address\");\n\n//print(email);\n//var email_address=\"user.ameliatesting3@vodafone.com\";\nif(emailList==\"\"){\n  flag=1;\n}\nelse if(typeof emailList != 'undefined' && typeof email_address != 'undefined')\n{\n  if(emailList){\n  var email =emailList.split(',');\n  for(var i=0;i<email.length;i++)  \n  {  \n    if(email[i].toLowerCase().trim() === email_address.toLowerCase().trim())\n    { flag=0;\n      break;\n    }else\n      flag=1;\n  } \n}\n  \n}\n\nif(flag==1) \n { vld_mail = 1;\n  } \n\n//print(flag);\nexecution.setVariable(\"vld_mail\",vld_mail);\n\n\n\n",
+			"settings":
+			{
+				"buffer_size": 882,
+				"line_ending": "Unix",
+				"name": "var flag=0;"
+			}
+		},
+		{
+			"file": "/home/sasharma/Desktop/A_module_10-0.bpmn",
+			"settings":
+			{
+				"buffer_size": 34909,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/sasharma/Cognet/Vodafone/Epic I sentences with goal.txt",
+			"settings":
+			{
+				"buffer_size": 7051,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "I want to reset AD password"
+			}
+		},
+		{
+			"file": "/home/sasharma/Cognet/Vodafone/Epic F sentences with ADSlot.txt",
+			"settings":
+			{
+				"buffer_size": 6719,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/sasharma/workspace/python/logexopr/Logical expression evaluator/logExEvaluator.py",
+			"settings":
+			{
+				"buffer_size": 5100,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "nextString.cpp",
+			"settings":
+			{
+				"buffer_size": 195,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "#include <iostream>"
+			}
+		},
+		{
+			"contents": "#attributes (priority = 11)\n[_outlookIssue]\n\n# outlook not work\n\t(OUTLOOK NOT *AN *ABLE *[@to] WORK)\n\n# not outlook\n\t(NOT *ABLE *[@to] *WORK *AN OUTLOOK)\n\n# work outlook E.g. Error when trying to open my outlook\n\t(WORK *TO *AN OUTLOOK)\n\n# problem outlook\n\t(PROBLEM *WITH *AN OUTLOOK)\n\n# outlook problem\n\t(OUTLOOK *HAS *AN PROBLEM)\n\n# outlook password\n\t(OUTLOOK *AN *WANT *AN PASSWORD)\n\n# outlook not accept password\n\t(OUTLOOK *AN NOT ACCEPT *AN PASSWORD)\n\n# email problem outlook E.g. email disappeared from my mailbox\n\t(EMAIL PROBLEM *TO *AN OUTLOOK)\n\n\t([_outlookArchivedMail] OUTLOOK)\n\nOUTLOOK\n\t(outlook)\n\t(CALENDAR)\n\t(EMAIL)\n\t(MAILBOX)\n\nMAILBOX\n\t(*shared mail box)\n\t(*shared mailbox)\n\nEMAIL\n\t(*send *AND *receive *AN [@email])\n\t(*receive *AN [@email])\n\t(*send *AND *receive *AN emails)\n\t(*receive *AN emails)\n\t(*send *AND *receive *AN e-mails)\n\t(*receive *AN e-mails)\n\t(*send *AND *receive *AN mails)\n\t(*receive *AN mails)\n\t(*send *AND *receive *AN e mails)\n\t(*receive *AN e mails)\n\nCALENDAR\n\t(calandar)\n\t(calendar)\n\t(calendars)\n\nTO\n\t([@to])\n\nNOT\n\t([@negation])\n\nWORK\n\t([@work])\n\t([@login])\n\t(load)\n\t(loads)\n\t(loaded)\n\t(loading)\n\t(launch)\n\t(launches)\n\t(launched)\n\t(launching)\n\t(open)\n\t(opens)\n\t(opened)\n\t(opening)\n\t(respond)\n\t(responds)\n\t(responded)\n\t(responding)\n\t(see)\n\t(sees)\n\t(saw)\n\t(seeing)\n\t(synchronise)\n\t(synchronises)\n\t(synchronised)\n\t(synchronising)\n\t(synchronize)\n\t(synchronizes)\n\t(synchronized)\n\t(synchronizing)\n\t(update)\n\t(updates)\n\t(updated)\n\t(updating)\n\nABLE\n\t([@able])\n\nWITH\n\t(regarding)\n\t(about)\n\t(as regards)\n\t(as to)\n\t(in regard to)\n\t(in relation to)\n\t(with reference to)\n\t(with regard to)\n\t(relating)\n\t(due to)\n\t(with)\n\nPROBLEM\n\t(problem)\n\t(problems)\n\t(issue)\n\t(issues)\n\t(bug)\n\t(bugs)\n\t(disconnect)\n\t(disconnects)\n\t(disconnected)\n\t(disconnecting)\n\t(disappear)\n\t(disappears)\n\t(disappeared)\n\t(disappearing)\n\t(just loading)\n\nHAS\n\t([@have])\n\nAN\n\t([@an])\n\t(my)\n\t(it is)\n\t(any)\n\t(be)\n\nWANT\n\t([@want])\n\t(*[@is] prompt *[@user] *[@to])\n\t(*[@is] prompts *[@user] *[@to])\n\t(*[@is] prompted *[@user] *[@to])\n\t(*[@is] prompting *[@user] *[@to])\n\t(*[@is] ask *[@user] *[@to])\n\t(*[@is] asks *[@user] *[@to])\n\t(*[@is] asked *[@user] *[@to])\n\t(*[@is] asking *[@user] *[@to])\n\nPASSWORD\n\t([@password])\n\nACCEPT\n\t(approve)\n\t(approved)\n\t(approving)\n\t(approval)\n\t(accept)\n\t(accepted)\n\t(accepting)\n\t(acceptance)\n\nADJ\n\t(any)\n\t(new)\n\nAND\n\t(and)\n\t(or)\n    \nSEND\n\t(send)\n    (sent)\n    (sends)\n    (sending)\n    \nRECEIVE\n\t(receive)\n\t(receives)\n    (received)\n    (receiving)\n\t(recieve)\n\t(recieves)\n    (recieved)\n    (recieving)\n;\n\n",
+			"settings":
+			{
+				"buffer_size": 2528,
+				"line_ending": "Unix",
+				"name": "#attributes (priority = 11)"
+			}
+		},
+		{
+			"file": "/home/sasharma/workspace/python/thrtsev.py",
+			"settings":
+			{
+				"buffer_size": 572,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "thrtsev.py"
+			}
+		},
+		{
+			"file": "/home/sasharma/workspace/python/logexopr/opdat.json",
+			"settings":
+			{
+				"buffer_size": 129,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/C++/C++ Single File.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "rein",
+		"selected_items":
+		[
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"redin",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"inden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"edit",
+				"Project: Edit Project"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+			"getAttr()",
+			"getattr()",
+			"print (getattr)",
+			"import sys",
+			"sys.version",
+			"sys.version()",
+			"import sys",
+			"os.version()",
+			"import os",
+			"which python",
+			"which pyhon",
+			"exit()",
+			"exit",
+			"import numpy",
+			"import numpy as np",
+			"np",
+			"no"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/sasharma/Desktop/common_get_wyid_2-0-.bpmn",
+		"/home/sasharma/Desktop/common_password_reset_67-0.bpmn",
+		"/home/sasharma/workspace/cpp/thrtsevSqMod.cpp",
+		"/home/sasharma/workspace/python/numrange.py",
+		"/home/sasharma/workspace/python/prettyprint.py",
+		"/home/sasharma/workspace/python/Ksmallest.py",
+		"/home/sasharma/workspace/python/logexopr/data.json",
+		"/home/sasharma/workspace/python/logexopr/readjsonArg.py",
+		"/home/sasharma/Desktop/Common Macros_latest_mod_saurabh.txt",
+		"/home/sasharma/workspace/python/logexopr/readjson.py",
+		"/home/sasharma/workspace/python/logexopr/opdat.json",
+		"/home/sasharma/workspace/ML/udacity/dlsetup.py",
+		"/home/sasharma/workspace/ML/udacity/prob1.py",
+		"/home/sasharma/workspace/python/lcsdpPrint.py",
+		"/home/sasharma/.config/ipython/profile_default/ipython_notebook_config.py",
+		"/home/sasharma/Desktop/Delete this/modified Appservice.csv",
+		"/home/sasharma/Desktop/Common Macros_latest.txt",
+		"/home/sasharma/Cognet/Vodafone/EpicO/Stg/[FieldSupportSlot]newDev.txt",
+		"/home/sasharma/Cognet/Vodafone/EpicM/EpicMGrammarWithGoals.csv",
+		"/home/sasharma/Cognet/Vodafone/EpicM/OutlookslotEpicM.gra",
+		"/home/sasharma/Cognet/Vodafone/EpicM/Epic M.gra",
+		"/home/sasharma/Cognet/Vodafone/EpicM/Dev/BPNS/outlook_bad_credentials_68-0.bpmn",
+		"/home/sasharma/Cognet/Vodafone/EpicG/prod2/BPN/bitlocker_asset_number_validation_2-0.bpmn",
+		"/home/sasharma/workspace/python/test.py",
+		"/home/sasharma/workspace/ML/softmax.py",
+		"/home/sasharma/workspace/ML/klarge.py",
+		"/home/sasharma/workspace/ML/niavenn.py",
+		"/home/sasharma/Cognet/Vodafone/EpicM/old chat log script.groovy",
+		"/home/sasharma/Cognet/Vodafone/EpicM/old conv html.groovy",
+		"/home/sasharma/Desktop/airwatch.txt",
+		"/home/sasharma/workspace/python/a.html",
+		"/home/sasharma/workspace/python/maxsubsum.py",
+		"/home/sasharma/workspace/cpp/triesearch.cpp",
+		"/home/sasharma/workspace/python/heap.py",
+		"/home/sasharma/workspace/python/poisonp1.py",
+		"/home/sasharma/workspace/python/nikgame.py",
+		"/home/sasharma/.config/sublime-text-3/Packages/C++/C++.sublime-build",
+		"/home/sasharma/workspace/cpp/triesearch.sublime-project",
+		"/home/sasharma/Cognet/Vodafone/Reset the windows password staging.txt",
+		"/home/sasharma/workspace/python/numseq.py",
+		"/home/sasharma/Cognet/Vodafone/Epic F sentences with goals.txt",
+		"/home/sasharma/Cognet/Vodafone/Epic I sentences.txt",
+		"/home/sasharma/Desktop/a.html",
+		"/home/sasharma/Cognet/Vodafone/Epic F grammar v3.txt",
+		"/home/sasharma/Cognet/Vodafone/ActiveDirectorySlotSynonyms.txt",
+		"/home/sasharma/Cognet/Vodafone/epicFTestGoal.txt",
+		"/home/sasharma/Upgrade Xwiki/pentaho_deploy.sh",
+		"/home/sasharma/Cognet/Vodafone/Epic F grammar.txt",
+		"/home/sasharma/Upgrade Xwiki/2. migrate-from-xwiki-7.1_to_7.4.sh",
+		"/run/user/1266713560/gvfs/smb-share:server=10.158.105.85,share=documents/EPic EFI merged grammar.txt",
+		"/home/sasharma/workspace/maxsubsum.py",
+		"/home/sasharma/wsp/apollo/apollo-install/paas/temp.yml",
+		"/home/sasharma/wsp/apollo/apollo-install/paas/roles/exim/tasks/main.yml",
+		"/home/sasharma/wsp/apollo/apollo-install/paas/Vagrantfile",
+		"/home/sasharma/wsp/apollo/apollo-install/paas/vagrant-playbook.yml",
+		"/home/sasharma/wsp/apollo/apollo-install/paas/roles/exim/handlers/main.yml",
+		"/home/sasharma/wsp/apollo/apollo-install/paas/roles/exim/tasks/exim.yml",
+		"/etc/hosts",
+		"/etc/ansible/hosts",
+		"/home/sasharma/wsp/apollo/apollo-docker/apollo-deps/xwiki/xwiki-start.sh",
+		"/home/sasharma/UpgradeXwiki/Test/xwiki.sh",
+		"/home/sasharma/UpgradeXwiki/xwiki.sh",
+		"/home/sasharma/UpgradeXwiki/xwiki_patch_deploy.sh",
+		"/home/sasharma/UpgradeXwiki/Scripts/xwiki_patch_deploy.sh",
+		"/home/sasharma/UpgradeXwiki/Scripts/xwiki_patch_deploy_2.sh",
+		"/home/sasharma/UpgradeXwiki/Scripts/ipkm-xwiki-patch/xwiki_patch_deploy_2.sh",
+		"/home/sasharma/wsp/apollo/apollo-install/paas/ansible.cfg",
+		"/home/sasharma/wsp/apollo/apollo-install/paas/ansible-paas.sh",
+		"/home/sasharma/wsp/apollo/apollo-install/paas/roles/common/tasks/main.yml",
+		"/home/sasharma/UpgradeXwiki/Build/xwiki/start_xwiki.sh",
+		"/home/sasharma/UpgradeXwiki/Build/xwiki/jetty/contexts/xwiki.xml"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"onbehalf",
+			"extend",
+			"lst",
+			"\\).*",
+			"\\).*$",
+			"\\#.*$",
+			"^((.*\\#.*$))",
+			"^\\#.*$",
+			"\\#.*",
+			"\\#.*$",
+			"\\#.*",
+			"print",
+			"operator",
+			"expr[0]",
+			"operand",
+			"'",
+			"hd",
+			"dir",
+			"get",
+			"REPLACE",
+			"@to]",
+			"[@to]",
+			"@to",
+			"an",
+			"be",
+			"@will",
+			"must",
+			"DEVICE",
+			"device",
+			"variable",
+			"resolver",
+			"acce",
+			"accept",
+			"and",
+			"ann",
+			"and",
+			"or",
+			"false",
+			"be",
+			"array",
+			"getLeftIndex",
+			"idx",
+			"@an",
+			"me",
+			"me)",
+			"me",
+			" be",
+			"be",
+			"be ",
+			"be",
+			"@to",
+			"in",
+			"any",
+			"just",
+			"accept",
+			"allow",
+			"it",
+			"ask",
+			"need",
+			"will",
+			"want",
+			"\\n,[Goal].outlookIssue",
+			"\\n",
+			"([\\w+])\\n",
+			"[\\w+.]\\n",
+			"\\W+\\n",
+			"\\n",
+			",",
+			"string",
+			"childre",
+			"[Goal].resetPassword",
+			"    ",
+			"\\n",
+			",",
+			"[Goal]",
+			",",
+			"\\n",
+			"\\n\\s+",
+			"\\n\\d+\\.",
+			"ACCOUNT_T",
+			"NOT",
+			"no",
+			"in",
+			"forget",
+			"forg",
+			"LOCKED",
+			"ACCESS",
+			"ACCOUNT_TYPE",
+			"RESET",
+			"NEED",
+			"USER",
+			"abou",
+			"results",
+			"result",
+			"reults",
+			"about",
+			"results",
+			"about",
+			"results",
+			"about",
+			"Xwiki",
+			"XWIKI_DOWNLOAD_DIR",
+			"XWIKI_FOLDER",
+			"XWIKI_SOURCE_FILE_DIR",
+			"vf",
+			"$XWIKI_BUILD_FOLDER",
+			"$XWIKI_BUILD_FOLDER --parents",
+			"XWIKI_PATCH_DIR",
+			"WIKI_PATCH_DIR",
+			"\\n",
+			"’",
+			"'",
+			"\njetty/etc/jetty-https.xml’\njetty/etc/jetty-ssl.xml’\njetty/etc/jetty.xml’\nstart_xwiki_debug.sh’\nstart_xwiki.sh’\nstop_xwiki.sh’\nwebapps/root/META-INF/maven/org.xwiki.platform/xwiki-platform-tool-rootwebapp/pom.properties’\nwebapps/root/META-INF/maven/org.xwiki.platform/xwiki-platform-tool-rootwebapp/pom.xml’\nwebapps/xwiki/WEB-INF/xwiki.cfg’\nwebapps/xwiki/WEB-INF/lib/ipkm-authentication-7.1.jar’\nwebapps/xwiki/WEB-INF/lib/org.xwiki.platform_xwiki-platform-ratings-api-8.0.jar’\nwebapps/xwiki/WEB-INF/lib/mysql-connector-java-5.1.37-bin.jar’\nwebapps/xwiki/WEB-INF/lib/org.xwiki.platform-xwiki-platform-autotag-8.0.jar’\nwebapps/xwiki/WEB-INF/lib/org.xwiki.platform_xwiki-platform-ratings-ui-8.0.xar’\nwebapps/xwiki/WEB-INF/classes/META-INF/NOTICE’\nwebapps/xwiki/WEB-INF/xwiki.properties’\nwebapps/xwiki/WEB-INF/hibernate.cfg.xml’\nwebapps/xwiki/WEB-INF/version.properties’\nwebapps/xwiki/skins/myskin’\nwebapps/xwiki/skins/myskin/editwiki.vm’\nwebapps/xwiki/skins/myskin/preview.vm’\nwebapps/xwiki/skins/myskin/ie-all.min.css’\nwebapps/xwiki/skins/myskin/historyinline.vm’\nwebapps/xwiki/skins/myskin/menus_user.vm’\nwebapps/xwiki/skins/myskin/menus_language.vm’\nwebapps/xwiki/skins/myskin/rightsUI.vm’\nwebapps/xwiki/skins/myskin/footer.vm’\nwebapps/xwiki/skins/myskin/hierarchy.vm’\nwebapps/xwiki/skins/myskin/style.min.css’\nwebapps/xwiki/skins/myskin/attachmentsinline.vm’\nwebapps/xwiki/skins/myskin/flamingo.min.js’\nwebapps/xwiki/skins/myskin/editobject.vm’\nwebapps/xwiki/skins/myskin/print.min.css’\nwebapps/xwiki/skins/myskin/less’\nwebapps/xwiki/skins/myskin/less/type.less’\nwebapps/xwiki/skins/myskin/less/style.less.vm’\nwebapps/xwiki/skins/myskin/less/xlist.less’\nwebapps/xwiki/skins/myskin/less/forms.less’\nwebapps/xwiki/skins/myskin/less/livetable.less’\nwebapps/xwiki/skins/myskin/less/variables.less’\nwebapps/xwiki/skins/myskin/less/colorThemeMappingOutput.vm’\nwebapps/xwiki/skins/myskin/less/messages.less’\nwebapps/xwiki/skins/myskin/less/edit.less’\nwebapps/xwiki/skins/myskin/less/panels.less’\nwebapps/xwiki/skins/myskin/less/tables.less’\nwebapps/xwiki/skins/myskin/less/tree.less’\nwebapps/xwiki/skins/myskin/less/bootstrap’\nwebapps/xwiki/skins/myskin/less/bootstrap/modals.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/type.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/utilities.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/theme.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/input-groups.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/forms.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/.csslintrc’\nwebapps/xwiki/skins/myskin/less/bootstrap/variables.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/navs.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/alerts.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/scaffolding.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/code.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/popovers.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/progress-bars.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/responsive-utilities.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/dropdowns.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/jumbotron.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/bootstrap.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/panels.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/media.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/labels.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/badges.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/wells.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/list-group.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/tables.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/LICENSE’\nwebapps/xwiki/skins/myskin/less/bootstrap/breadcrumbs.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/buttons.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/print.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/navbar.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/button-groups.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/mixins’\nwebapps/xwiki/skins/myskin/less/bootstrap/mixins/nav-vertical-align.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/mixins/forms.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/mixins/reset-filter.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/mixins/background-variant.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/mixins/nav-divider.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/mixins/size.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/mixins/alerts.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/mixins/gradients.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/mixins/responsive-visibility.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/mixins/opacity.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/mixins/grid-framework.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/mixins/panels.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/mixins/image.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/mixins/labels.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/mixins/hide-text.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/mixins/border-radius.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/mixins/text-overflow.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/mixins/list-group.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/mixins/buttons.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/mixins/center-block.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/mixins/resize.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/mixins/table-row.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/mixins/progress-bar.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/mixins/clearfix.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/mixins/text-emphasis.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/mixins/vendor-prefixes.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/mixins/tab-focus.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/mixins/grid.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/mixins/pagination.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/thumbnails.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/pager.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/component-animations.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/responsive-embed.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/mixins.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/.csscomb.json’\nwebapps/xwiki/skins/myskin/less/bootstrap/tooltip.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/carousel.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/grid.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/pagination.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/close.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/glyphicons.less’\nwebapps/xwiki/skins/myskin/less/bootstrap/normalize.less’\nwebapps/xwiki/skins/myskin/less/before-bootstrap.less’\nwebapps/xwiki/skins/myskin/less/buttons.less’\nwebapps/xwiki/skins/myskin/less/vertical-menus.less’\nwebapps/xwiki/skins/myskin/less/annotations.less’\nwebapps/xwiki/skins/myskin/less/action-menus.less’\nwebapps/xwiki/skins/myskin/less/variablesInit.vm’\nwebapps/xwiki/skins/myskin/less/admin.less’\nwebapps/xwiki/skins/myskin/less/layout.less’\nwebapps/xwiki/skins/myskin/less/accordion.less’\nwebapps/xwiki/skins/myskin/less/misc.less’\nwebapps/xwiki/skins/myskin/less/grid.less’\nwebapps/xwiki/skins/myskin/less/general.less’\nwebapps/xwiki/skins/myskin/less/headers.less’\nwebapps/xwiki/skins/myskin/style.css’\nwebapps/xwiki/skins/myskin/htmlheader.vm’\nwebapps/xwiki/skins/myskin/editactions.vm’\nwebapps/xwiki/skins/myskin/edit.vm’\nwebapps/xwiki/skins/myskin/docdoesnotexist.vm’\nwebapps/xwiki/skins/myskin/login.vm’\nwebapps/xwiki/skins/myskin/colorThemeInit.vm’\nwebapps/xwiki/skins/myskin/ie-all.css’\nwebapps/xwiki/skins/myskin/companylogo.vm’\nwebapps/xwiki/skins/myskin/editinline.vm’\nwebapps/xwiki/skins/myskin/delete.vm’\nwebapps/xwiki/skins/myskin/quicksearch.vm’\nwebapps/xwiki/skins/myskin/shortcuts.vm’\nwebapps/xwiki/skins/myskin/macros.vm’\nwebapps/xwiki/skins/myskin/global.vm’\nwebapps/xwiki/skins/myskin/menus_home.vm’\nwebapps/xwiki/skins/myskin/print.css’\nwebapps/xwiki/skins/myskin/logo.png’\nwebapps/xwiki/skins/myskin/menus_macros.vm’\nwebapps/xwiki/skins/myskin/startpage.vm’\nwebapps/xwiki/skins/myskin/menus_space.vm’\nwebapps/xwiki/skins/myskin/menus_page.vm’\nwebapps/xwiki/skins/myskin/renameStep1.vm’\nwebapps/xwiki/skins/myskin/attachmentslist.vm’\nwebapps/xwiki/skins/myskin/menus_content.vm’\nwebapps/xwiki/skins/myskin/editclass.vm’\nwebapps/xwiki/skins/myskin/flamingo.js’\nwebapps/xwiki/skins/myskin/menus_view.vm’\nwebapps/xwiki/skins/myskin/menus_content\nwebapps/xwiki/skins/myskin/docextra.vm’\nwebapps/xwiki/skins/myskin/menus_wiki.vm’\nwebapps/xwiki/skins/myskin/javascript.vm’\nwebapps/xwiki/skins/myskin/layoutvars.vm’\nwebapps/xwiki/skins/myskin/view.vm’\nwebapps/xwiki/skins/myskin/menus_create.vm’\nwebapps/xwiki/skins/myskin/editmeta.vm’\nwebapps/xwiki/skins/myskin/META-INF’\nwebapps/xwiki/skins/myskin/META-INF/LICENSE’\nwebapps/xwiki/skins/myskin/META-INF/NOTICE’\nwebapps/xwiki/skins/myskin/contentview.vm’\nwebapps/xwiki/skins/myskin/previewactions.vm’\nwebapps/xwiki/skins/myskin/wysiwyginput.vm’\nwebapps/xwiki/skins/myskin/commentsinline.vm’\nwebapps/xwiki/skins/myskin/skin.properties’\nwebapps/xwiki/META-INF/maven/org.xwiki.enterprise/xwiki-enterprise-web/pom.properties’\nwebapps/xwiki/META-INF/maven/org.xwiki.enterprise/xwiki-enterprise-web/pom.xml’\n",
+			"awk",
+			"XWIKI_DOWNLOAD_DIR\n",
+			"awk",
+			"XWIKI_TEMP_DIR",
+			"changed f",
+			"-c",
+			"Downloading Xwiki from",
+			"Upgrade Xwiki"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"sqLst",
+			"\\)",
+			"\\)$",
+			"",
+			"# print",
+			"operator[0]",
+			"operator",
+			"heap",
+			"getLeftChildIndex",
+			"index",
+			",[Goal].outlookIssue\\n",
+			"$1,[Goal].outlookIssue\\n",
+			",[Goal].outlookIssue\\n",
+			".[Goal].outlookIssue\\n",
+			" ",
+			"char *",
+			"[ADPasswordReset].ad_pwd_reset_true",
+			"\\t",
+			",[Goal].resetPassword\\n",
+			" ",
+			",[Goal]",
+			" ",
+			",[Goal].resetPassword\\n",
+			"\\n",
+			"LOST",
+			"f",
+			"../$XWIKI_BUILD_FOLDER",
+			"--parents $XWIKI_BUILD_FOLDER ",
+			"XWIKI_PATCH_DIR",
+			" $XWIKI_BUILD_FOLDER --parents\\n",
+			"$XWIKI_BUILD_FOLDER --parents\\n",
+			"UpgradeXwiki"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 7,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 199,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								199,
+								199
+							]
+						],
+						"settings":
+						{
+							"auto_name": "Ask grammar",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "thrtsevSqMod1.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2845,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2486,
+								2486
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#include<cmath>",
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1085.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/sasharma/Desktop/get_leaver_request_5-0.bpmn",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 20109,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								600,
+								600
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11780,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11780,
+								11780
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#Global Macros",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 10832.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/home/sasharma/.m2/settings.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1784,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								471,
+								471
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1121.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/home/sasharma/Desktop/conversations.csv",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2443524,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9379,
+								9606
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 240417.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 882,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								43,
+								43
+							]
+						],
+						"settings":
+						{
+							"auto_name": "var flag=0;",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/home/sasharma/Desktop/A_module_10-0.bpmn",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 34909,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 570.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 8,
+					"file": "/home/sasharma/Cognet/Vodafone/Epic I sentences with goal.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7051,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1190,
+								1190
+							]
+						],
+						"settings":
+						{
+							"auto_name": "I want to reset AD password",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/home/sasharma/Cognet/Vodafone/Epic F sentences with ADSlot.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6719,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3999,
+								3999
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 285.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/home/sasharma/workspace/python/logexopr/Logical expression evaluator/logExEvaluator.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5100,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2524.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "nextString.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 195,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#include <iostream>",
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2528,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2528,
+								2528
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#attributes (priority = 11)",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 673.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "/home/sasharma/workspace/python/thrtsev.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 572,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								126,
+								126
+							]
+						],
+						"settings":
+						{
+							"auto_name": "thrtsev.py",
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "/home/sasharma/workspace/python/logexopr/opdat.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 129,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								124,
+								124
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 269.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 35.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.775470123877,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 282.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "triesearch.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 96.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
