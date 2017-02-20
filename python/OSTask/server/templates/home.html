@@ -1,27 +1,50 @@
    <html>
    <head>
-   </head>
-   <body>
-     <h1>Temperature dashboard</h1>
-     <div id="event">
-     <table border="1">
+     <style>
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+   <h1>Temperature dashboard</h1>
+   <div id="event">
+     <table style="width:100%" id="tempTable">
        <tr>
-       <td>hello</td>
-       <td id ="temp1">1.0</td>
+         <td><b>Sensor</b></td>
+         <td id ="temp1"><b>Temperature</b></td>
        </tr>
      </table>
-     </div>
-     <script type="text/javascript">
+    </div>
+   <script type="text/javascript">
 
      //var eventOutputContainer = document.getElementById("event");
-     var eventOutputContainer = document.getElementById("temp1");
+     //var eventOutputContainer = document.getElementById("temp1");
+     var eventOutputContainer = document.getElementById("tempTable");
      var evtSrc = new EventSource("/subscribe");
 
      evtSrc.onmessage = function(e) {
-       console.log(e.data);
-       eventOutputContainer.innerHTML = e.data;
+       //console.log(e.data);
+       var data = e.data;
+       eventOutputContainer.innerHTML =  data;
+
+
+      //  var newData = JSON.parse(e.data.toString());
+
+
+      //        var valTable = document.getElementById("vals");
+      //        var new_tbody = document.createElement('tbody');
+      // var row = document.createElement("tr");
+      //  for(var i=0 ; i < Object.keys(newData).length ; i++){
+      //       row.insertCell(0).innerHTML = Object.keys(newData)[i];
+      //       row.insertCell(1).innerHTML = Object.values(newData)[i];
+      //       new_tbody.addChild(row);
+
+      //  }
+      // tbody1.parentNode.replaceChild(new_tbody, tbody1)
      };
 
-     </script>
-   </body>
-   </html>
+   </script>
+ </body>
+ </html>

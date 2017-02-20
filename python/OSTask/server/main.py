@@ -1,22 +1,19 @@
 import gevent
 from gevent.wsgi import WSGIServer
 from gevent.queue import Queue
-
 from flask import Flask, Response, render_template
-import time
 
 import sys
 import json
 
 sys.path.append("../Sensor")
-# sys.path.append("../")
 
 import sensor
 import threading
 
-sensors = dict()
+# Map to store last know value of temperature sensors
+sensors = dict()	
 
-# SSE "protocol" is described here: http://mzl.la/UPFyxY
 class ServerSentEvent(object):
 
 	def __init__(self, data):
@@ -38,80 +35,49 @@ class ServerSentEvent(object):
 		return "%s\n\n" % "\n".join(lines)
 
 app = Flask(__name__)
+
+# List of subscribed clients
 subscriptions = []
 
 # At '/' URL return with the template page
 @app.route("/")
 def index():
-	debug_template = """
-	 <html>
-	 <head>
-	 </head>
-	 <body>
-	   <h1>Temperature dashboard</h1>
-	   <div id="event">
-		 <table border="1">
-		   <tr>
-			 <td>hello</td>
-			 <td id ="temp1">1.0</td>
-		   </tr>
-		 </table>
-	   </div>
-	   <script type="text/javascript">
-
-		 //var eventOutputContainer = document.getElementById("event");
-		 var eventOutputContainer = document.getElementById("temp1");
-		 var evtSrc = new EventSource("/subscribe");
-
-		 evtSrc.onmessage = function(e) {
-		   console.log(e.data);
-		   eventOutputContainer.innerHTML = e.data;
-		 };
-
-	   </script>
-	 </body>
-	 </html>
-	"""
 	return render_template('home.html')
-	#return(debug_template)
 
+
+# At /debug indicate the number of subscriptions
 @app.route("/debug")
 def debug():
 	return "Currently %d subscriptions" % len(subscriptions)
 
-# @app.route("/publish")
-# def publish():
-#	 #Dummy data - pick up from request for real data
-#	 def notify():
-#		 msg = str(time.time())
-#		 for sub in subscriptions[:]:
-#			 sub.put(msg)
-	
-#	 gevent.spawn(notify)
-	
-#	 return "OK"
-
+# The sensors can do a get request to URI /publish/<sensorname>/<temperatureValue>
+# Eg. 127.0.0.1:5000/publish/sensor1/50.1
 @app.route("/publish/<sensor>/<temp>")
 def publish(sensor, temp):
-	#Dummy data - pick up from request for real data
+
+	#  Add the data to the map of sensor values
 	sensors[sensor] = temp
 	print ("Server:" + str(sensors[sensor]))
 
 	# print('sensor -> ' + str(sensor) +', '+ str(temp) )
 	def notify():
 		# msg = '%s,%s'% (str(sensor), str(temp))
+		# Publish all the temperatures to all subscribers
 		msg = json.dumps(sensors, ensure_ascii=False)
 		for sub in subscriptions[:]:
 			sub.put(msg)
 
+	# Sent a gevent alert to all clients waiting for a message
 	gevent.spawn(notify)
 
 	return "OK"
 
+# A client can visit /subscribe URL to subscribe for realtime temperature
 @app.route("/subscribe")
 def subscribe():
 	def gen():
 		q = Queue()
+		# Add all the clients visiting this URI to list of subscibers
 		subscriptions.append(q)
 		try:
 			while True:
@@ -124,14 +90,15 @@ def subscribe():
 	return Response(gen(), mimetype="text/event-stream")
 
 if __name__ == "__main__":
+	# Spawn the app and keep serving till applicatoin is killed
 	app.debug = True
 	server = WSGIServer(("", 5000), app)
 	server.serve_forever()
 
-	s1thread = threading.Thread(target=sensor.postTemp, args=sense1)
-	s2thread = threading.Thread(target=sensor.postTemp, args=sense2)
-	s1thread.start()
-	s2thread.start()
+	# s1thread = threading.Thread(target=sensor.postTemp, args=sense1)
+	# s2thread = threading.Thread(target=sensor.postTemp, args=sense2)
+	# s1thread.start()
+	# s2thread.start()
 	# sensor.postTemp(sense1)
 	# sensor.postTemp(sense2)
 	# Then visit http://localhost:5000 to subscribe 
