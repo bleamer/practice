@@ -2,13 +2,14 @@ import gevent
 from gevent.wsgi import WSGIServer
 from gevent.queue import Queue
 
-from flask import Flask, Response
+from flask import Flask, Response, render_template
 import time
 
 import sys
 import json
 
 sys.path.append("../Sensor")
+# sys.path.append("../")
 
 import sensor
 import threading
@@ -39,7 +40,7 @@ class ServerSentEvent(object):
 app = Flask(__name__)
 subscriptions = []
 
-# Client code consumes like this.
+# At '/' URL return with the template page
 @app.route("/")
 def index():
 	debug_template = """
@@ -47,7 +48,7 @@ def index():
 	 <head>
 	 </head>
 	 <body>
-	   <h1>Server sent events</h1>
+	   <h1>Temperature dashboard</h1>
 	   <div id="event">
 		 <table border="1">
 		   <tr>
@@ -71,7 +72,8 @@ def index():
 	 </body>
 	 </html>
 	"""
-	return(debug_template)
+	return render_template('home.html')
+	#return(debug_template)
 
 @app.route("/debug")
 def debug():

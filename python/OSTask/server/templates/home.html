@@ -1,0 +1,27 @@
+   <html>
+   <head>
+   </head>
+   <body>
+     <h1>Temperature dashboard</h1>
+     <div id="event">
+     <table border="1">
+       <tr>
+       <td>hello</td>
+       <td id ="temp1">1.0</td>
+       </tr>
+     </table>
+     </div>
+     <script type="text/javascript">
+
+     //var eventOutputContainer = document.getElementById("event");
+     var eventOutputContainer = document.getElementById("temp1");
+     var evtSrc = new EventSource("/subscribe");
+
+     evtSrc.onmessage = function(e) {
+       console.log(e.data);
+       eventOutputContainer.innerHTML = e.data;
+     };
+
+     </script>
+   </body>
+   </html>
