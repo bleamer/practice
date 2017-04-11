@@ -24,7 +24,7 @@ public:
 };
 
 Graph::Graph(int V){
-	this->V=V;
+	this->V = V;
 	adj = new list<int>[V];
 }
 
@@ -39,10 +39,11 @@ void Graph::addEdge(int v, int w){
 // V: given vertex
 void Graph::topologicalSortUtil(int v, bool visited[], stack<int> &Stack){
 	visited[v] = true; // Mark the current vertex as visited
+
 	list<int>::iterator i;
-	for(i = adj[v].begin(); i != adj[v].end(); i++) // For all vertices in Vertex V's adjacency list
+	for(i = this->adj[v].begin(); i != this->adj[v].end(); ++i) // For all vertices in Vertex V's adjacency list
 	{
-		if (visited[*i] == false) // if they are not already visited
+		if (!visited[*i]) // if they are not already visited
 		{
 			topologicalSortUtil(*i, visited, Stack);
 		}
@@ -61,7 +62,7 @@ void Graph::topologicalSort(){
 
 	for (int i = 0; i < V; i++) {
 		if(visited[i] == false){
-			topologicalSortUtil(V,visited,Stack);
+			topologicalSortUtil(i,visited,Stack);
 		}
 	}
 	while(Stack.empty() == false){
@@ -99,7 +100,7 @@ void printOrder(string words[], int n, int alpha){
 }
 
 int main() {
-	cout << "!!! fs !!!" << endl; // prints !!! fs !!!
+	cout << "!!! Alien Language problem Solution - Topological sort !!!" << endl; // prints !!! fs !!!
 
 	string words[] = {"caa", "aaa", "aab"};
 	    printOrder(words, 3, 3);
